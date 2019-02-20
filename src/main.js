@@ -4,7 +4,10 @@ import router from './router'
 import store from './store'
 import BootstrapVue from 'bootstrap-vue'
 import VueSweetalert2 from 'vue-sweetalert2';
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 
+Vue.use(Vuetify)
 Vue.use(BootstrapVue);
 Vue.config.productionTip = false
 
