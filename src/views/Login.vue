@@ -53,8 +53,8 @@
                     </a> </li>
             </ul>
             <div class="clear"> </div>
+            <input type="submit" value="Login" />
         </div>
-        <input type="submit" value="Login" />
     </form>
     <!--// main-w3layouts-form -->
     <!-- Social icons -->
@@ -66,6 +66,7 @@
         <ul class="social-icons-agileits-w3layouts">
             <li><a @click="authenticate('facebook')" class="fa fa-facebook"></a></li>
             <li><a href="https://id.twitch.tv/oauth2/authorize?client_id=n9se5ttv1djl68jpjcib9vhzv5l6fy&redirect_uri=http://localhost:8080/login&response_type=token&scope=user_read" class="fa fa-twitch"></a></li>
+            <li><a href="http://localhost:4000/api/users/auth/steam" class="fa fa-steam"></a></li>
             <!-- <li><a @click.prevent="loginWithTwitch" class="fa fa-twitch"></a></li> -->
 
         </ul>
@@ -84,7 +85,7 @@ import axios from 'axios';
 Vue.use(VueAxios, axios)
 
 Vue.use(VueAuthenticate, {
-    baseUrl: '/api/users', // Your API domain
+    baseUrl: 'http://localhost:3000/api/users', // Your API domain
     
     providers: {
     facebook: {
@@ -249,8 +250,7 @@ export default {
                     this.error = "These credentials do not match our records.";
                     console.log(error);
                 });
-        }
-
+        },
     },
     beforeMount() {
         var this_ = this;
