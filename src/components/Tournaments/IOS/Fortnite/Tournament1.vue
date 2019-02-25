@@ -8,29 +8,62 @@
 <b-col><h5 style="color: white; font-size: 18px;"><b>$5 Tournament</b></h5>
     <h5 style="color: grey; font-size: 16px;">Battle Royale</h5>
 <h5 style="color: skyblue; font-size: 16px;">Epic Games</h5>
-<h5 style="color: skyblue; font-size: 14px;"><b-badge variant="danger">18+</b-badge></h5></b-col> 
-    <b-col></br></br><h5 style="color: white; font-size: 16px;"></h5></b-col>
+<h5 style="color: skyblue; font-size: 14px;"><b-badge variant="danger">18+</b-badge></h5>
+</b-col> 
+    <b-col></b-col>
 <b-col></b-col>
   </b-row>
 </b-container>
   <p style="color: white; text-align: left; font-size: 16px;">Description: 
  <span style="color: grey;" class="name">
-  Works with: iPhone SE, 6S, 7, 8, X, XS, XR; iPad Mini 4, Air 2, 2017, 2018, Pro
-Fortnite DOES NOT support: iPhone 5S, 6, 6 Plus; iPad Air, Mini 2, Mini 3, iPod Touch
-Fortnite has come to mobile! Squad up and compete to be the last one standing in Battle Royale, or use your imagination to build your dream Fortnite in Creative.
-Requires an internet connection and iOS 11.</span></p>
-<p class="detail" style="color: white; text-align: left; font-size: 16px;"> App Store Link: <span style="color: grey;" class="name">https://itunes.apple.com/au/app/fortnite/id1261357853?mt=8</span> </p>
-<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Price: <span class="name" style="color: grey;">Free</span> </p>
-<p class="detail" style="color: white; text-align: left; font-size: 16px;"> App Rating: <span style="color: grey;" class="name">4.5 stars</span> </p>
-<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Version: <span class="name" style="color: grey;">7.402  </span> </p>
-<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Last Updated: <span class="name" style="color: grey;">18/2/2018  </span> </p>
-<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Category: <span class="name" style="color: grey;">Mobile Game </span> </p>
-<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Compatibility: <span class="name" style="color: grey;">iPhone, Android  </span> </p>
-<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Version: <span class="name" style="color: grey;">7.402  </span> </p>
-<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Size: <span class="name" style="color: grey;">138.2 MB </span> </p>
-<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Languages: <span class="name" style="color: grey;">English</span> </p>
+  🥇 FORTNITE MOBILE GAMERS ONLY ﻿ 🥇
 
-WG Rating:
+🌿 *ASIA•SOLO• TPP • SANHOK 🌿
+
+💥 *MOBILE AND EMULATORS BOTH ARE ALLOWED* 💥
+
+This is a FREE SOLO Tournament BY GAMERS ONLY
+
+** Only for SUBSCRIBES **
+
+If u want to earn Money from this FREE Tournament
+
+** Then You Just Have To Subscribe Our YouTube Channel, HIT the BELL Button for latest videos updates from our end.
+
+Here is our YouTube Channel : 
+https://www.youtube.com/channel/UCDTB4hskigI7tA6wET7Zlfg
+Once you subscribe then you can able to WATCH Our match LIVE
+
+* Registrations only be accepted after Subscribe is done and You have to send a screenshot with your Name to this WHATSAPP number 9943099909
+
+** We will intimate you with the details 1 hour before the match with the ROOM ID once we confirmed that you subscribed our YouTube channel. **
+
+**Match will be started on the 27/02/2019 5.00pm**</span></p>
+<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Timezone: <span style="color: grey;" class="name">Asia/Kolkata (UTC+05:30)</span> </p>
+<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Prize: <span class="name" style="color: grey;"> *PRIZE MONEY* 💰
+
+🥇1 Rank= 500 INR
+🥇2 Rank= 200 INR
+🥇3 Rank= 150 INR
+🥇4 Rank= 100 INR
+🥇5 Rank= 50 INR</span> </p>
+<p class="detail" style="color: white; text-align: left; font-size: 16px;">Rules: <span style="color: grey;" class="name">💥* RULES AND CONDITION *💥
+
+----------------------------------------------------------------------
+⚠️🛑✋⚠️🛑✋⚠️🛑✋⚠️🛑✋⚠️🛑✋⚠️🛑✋⚠️
+ANY KIND OF CHEATING AND HACKING IS NOT ALLOWED
+
+CREATING YOUR OWN TEAM IN SOLO WILL NOT ALLOWED AND WE BE KICKED OUT FROM THE MATCH
+
+SPECTATORS WILL BE LIVE WATCHING YOUR GAME, ANY KIND OF CHEATING OR HACKING WILL AUTOMATICALLY DISQUALIFY YOU & YOU WILL GET BANNED FOR FUTURE TOURNAMENTS
+⚠️🛑✋⚠️🛑✋⚠️🛑✋⚠️🛑✋⚠️🛑✋⚠️🛑✋⚠️
+----------------------------------------------------------------------</span> </p>
+<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Payment Method: <span class="name" style="color: grey;">PayPal  </span> </p>
+<p class="detail" style="color: white; text-align: left; font-size: 16px;"> Players Joined: <span class="detail" style="color: white; text-align: left; font-size: 20px;"> <b-badge pill variant="primary"> 120/200</b-badge></span>
+</p> 
+
+  <b-button block variant="success">Join Tournament</b-button>
+
  
 
 
