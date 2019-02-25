@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-8 main-content">
          <div>
-                  <h5 class="heading2">H2H iOS</h5>
+                  <h5 class="heading2">H2H iOS </h5>
                   <div v-if="counter ==1">
     <b-card-group columns>
         <b-card 
@@ -11,7 +11,7 @@
                 alt="Img"
                 top
                 width="80%"/>
-         <b-button variant="success" block>Join Room</b-button>
+         <b-button variant="success" href="#/h2h/ios/fortnite" block>Join Room</b-button>
                
         </b-card>
         

@@ -23,10 +23,40 @@ import Screenshots from '@/views/Screenshots.vue'
 import ScreenshotsForm from '@/views/ScreenshotsForm.vue'
 import Dota2 from '@/views/Dota2.vue'
 import Tournaments from '@/views/Tournaments.vue'
+import H2HIOS from '@/views/H2HIOS.vue'
+import FortniteIOS from '@/views/FortniteIOS.vue'
+import TournamentsIOS from '@/views/TournamentsIOS.vue'
+import TournamentsIOSFortnite from '@/views/TournamentsIOSFortnite.vue'
+import TournamentsIOSFortnite1 from '@/views/TournamentsIOSFortnite1.vue'
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/h2h/ios/fortnite',
+      name: 'FortniteIOS',
+      component: FortniteIOS
+    },
+    {
+      path: '/h2h/ios',
+      name: 'H2HIOS',
+      component: H2HIOS
+    },
+    {
+      path: '/tournaments/ios/fortnite',
+      name: 'TournamentsIOSFortnite',
+      component: TournamentsIOSFortnite
+    },
+    {
+      path: '/tournaments/ios/fortnite/1',
+      name: 'TournamentsIOSFortnite1',
+      component: TournamentsIOSFortnite1
+    },
+    {
+      path: '/tournaments/ios',
+      name: 'TournamentsIOS',
+      component: TournamentsIOS
+    },
     {
       path: '/tournaments',
       name: 'Tournaments',
