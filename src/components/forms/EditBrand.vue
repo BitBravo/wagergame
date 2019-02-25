@@ -44,12 +44,85 @@
 </template>
 
 <script>
+import api from "@/services/RestService"
+import { mapGetters, mapActions } from "vuex";
+
 export default {
+name: "edit-team",
+  props: ['data', 'index', 'request'],
   data() {
     return {
-      form: {},
+      load: false,
       file: null,
-      load: false
+      form: {}
+    }
+  },
+  methods: {
+    ...mapGetters({
+        getUserId: "getUserId"
+      }),
+    async submit(evt) {
+      console.log("submitting");
+      let that = this;
+      that.load = true;
+
+      if(this.file)
+      {
+        let formData = new FormData();
+        formData.append("file", this.file);
+        this.picture = await api.postMultipart("/api/file/upload", formData );
+        this.$refs.fileinput.reset();
+      }
+
+      let payload = {...this.form};
+
+      payload["picture"] = this.picture ? this.picture.data.url : (this.index ? this.data[this.index].imgPath : '');
+
+      if(this.index)
+        {
+          console.log('IF');
+          this.data[this.index] = payload;
+        }
+      else 
+        { 
+          console.log('ELSE');
+          this.data.push(payload);
+        }
+
+      if(this.request == 'post')
+        api.post("/api/users/add-detail", {
+          userId: this.getUserId(),
+          brands:this.data
+        })
+        .then(res => {that.load = false; that.$emit("submit", res.data)})
+        .catch(err => console.log(err))
+      else {
+        api.put("/api/users/update-detail", {
+          userId: this.getUserId(),
+          brands:this.data
+        }).
+        then(res => {that.load = false; that.$emit("submit", res.data)})
+        .catch(err => console.log(err))
+      }
+      
+      this.form.name = null;
+    }
+  },
+  watch: {
+    data(){
+      //this.form = this.data;
+      if(this.index)
+      {
+        this.form = {...this.data[this.index]};
+        console.log("here1");
+      }
+    },
+    index(){
+      if(this.index)
+      {
+        this.form = {...this.data[this.index]};
+        console.log("here2");
+      }
     }
   }
 }

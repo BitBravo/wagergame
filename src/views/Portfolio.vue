@@ -1,16 +1,16 @@
 <template>
     <div>
-        <div class="container">
+        <div class="container" v-if="userData">
             <main-header></main-header>
-            <user-profile :data="userData" @refresh="getUserData"></user-profile>
+            <user-profile :data="userData" @refresh="refresh"></user-profile>
             <section>
                 <div class="row">
                     <sidebar-left></sidebar-left>
-                    <main-content :data="userData" @refresh="getUserData"></main-content>
+                    <main-content :data="userData" @refresh="refresh"></main-content>
                     <sidebar-right></sidebar-right>
                 </div>
-                <sponsors></sponsors>
-                <brands></brands>
+                <sponsors :data="userData" @refresh="refresh"></sponsors>
+                <brands :data="userData" @refresh="refresh"></brands>
             </section>
         </div>
         <footer-social></footer-social>
@@ -44,6 +44,7 @@ import {
     mapActions
 } from 'vuex';
 import UserService from "@/services/UserService";
+import { setTimeout } from 'timers';
 
 export default {
     name: 'Portfolio',
@@ -83,6 +84,12 @@ export default {
             let res = await UserService.getAdditionalData(this.user._id);
             this.userData = res.data == null ? {} : res.data;
             this.showLoading = false;
+        },
+        refresh() {
+            this.userData = null;
+            setTimeout(() => {
+                this.getUserData();
+            }, 500)
         }
     },
     watch: {

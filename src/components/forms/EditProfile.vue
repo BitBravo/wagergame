@@ -37,8 +37,13 @@
         </b-form-textarea>
       </b-form-group>
       <!-- Styled -->
+      
       <b-form-file v-model="file" :state="Boolean(file)" placeholder="Choose avatar"></b-form-file>
-      <div v-if="file" class="mt-3">Selected file: {{file && file.name}}</div>
+      <div v-if="file" class="mt-3">Selected file: {{file && file.name}} <i class="fa fa-close" @click="file =null"></i></div>
+      
+      <b-form-file v-model="fileCover" :state="Boolean(file)" placeholder="Choose cover photo"></b-form-file>
+      <div v-if="fileCover" class="mt-3">Selected file: {{fileCover && fileCover.name}} <i class="fa fa-close" @click="fileCover =null"></i></div>
+      
       <div style="margin-top: 20px; text-align: right">
         <div v-if="load" class="lds-ring"><div></div><div></div><div></div><div></div></div>
         <b-button type="submit" variant="primary">Submit</b-button>
@@ -58,6 +63,7 @@ export default {
     return {
       load: false,
       file: null,
+      fileCover: null,
       form: {
         name: '',
         age: '',
@@ -84,7 +90,14 @@ export default {
         let formData = new FormData();
         formData.append("file", this.file);
         this.profilePic = await api.postMultipart("/api/file/upload", formData );
-        console.log(this.profilePic.data.url);
+        //console.log(this.profilePic.data.url);
+      }
+      if(this.fileCover)
+      {
+        let formData = new FormData();
+        formData.append("file", this.fileCover);
+        this.coverPic = await api.postMultipart("/api/file/upload", formData );
+        //console.log(this.profilePic.data.url);
       }
 
       if(this.request == 'post')
@@ -92,6 +105,7 @@ export default {
           name: this.form.name,
           userId: this.getUserId(),
           profilePic: this.profilePic ? this.profilePic.data.url : this.data.profilePic,
+          coverPhoto: this.coverPic ? this.coverPic.data.url : this.data.coverPic,
           age: this.form.age,
           favRole: this.form.favRole,
           UserFulldescription: this.form.UserFulldescription,
@@ -102,6 +116,7 @@ export default {
           name: this.form.name,
           userId: this.getUserId(),
           profilePic: this.profilePic ? this.profilePic.data.url : this.data.profilePic,
+          coverPhoto: this.coverPic ? this.coverPic.data.url : this.data.coverPic,
           age: this.form.age,
           favRole: this.form.favRole,
           UserFulldescription: this.form.UserFulldescription,
