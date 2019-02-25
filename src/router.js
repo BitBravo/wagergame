@@ -16,16 +16,22 @@ import NewPost from '@/components/NewPost'
 import EditPost from '@/components/EditPost'
 import Stats from '@/views/Stats.vue'
 import Streams from '@/views/Streams.vue'
+import StreamsForm from '@/views/StreamsForm.vue'
 import Sponsors from '@/views/Sponsors.vue'
 import SponsorsForm from '@/views/SponsorsForm.vue'
-import StreamsForm from '@/views/StreamsForm.vue'
 import Screenshots from '@/views/Screenshots.vue'
 import ScreenshotsForm from '@/views/ScreenshotsForm.vue'
 import Dota2 from '@/views/Dota2.vue'
+import Tournaments from '@/views/Tournaments.vue'
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/tournaments',
+      name: 'Tournaments',
+      component: Tournaments
+    },
     {
       path: '/screenshots/form',
       name: 'ScreenshotsForm',
