@@ -4,45 +4,20 @@
                         <h5 class="heading">Sponsors
                                 <switches style="vertical-align: middle; float: right; margin-right: 60px" v-model="enabled"
                                         theme="bootstrap" color="success"></switches>
-                                <i @click="showModal" class="fa fa-pencil fa-1x"></i>  
+                                <i @click="showModal()" class="fa fa-pencil fa-1x"></i>  
                         </h5>
                         <div class="sponsors">
-                                <div>
-                                        <img src="img/sponsor_nike.png" alt="">
-                                </div>
-                                <div>
-                                        <img src="img/sponsor_red_bull.png" alt="">
-                                </div>
-                                <div>
-                                        <img src="img/sponsor_pepsi.png" alt="">
-                                </div>
-                                <div>
-                                        <img src="img/sponsor_ray_ban.png" alt="">
-                                </div>
-                                <div>
-                                        <img src="img/sponsor_james.png" alt="">
-                                </div>
-
-                                <div>
-                                        <img src="img/sponsor_nike.png" alt="">
-                                </div>
-                                <div>
-                                        <img src="img/sponsor_red_bull.png" alt="">
-                                </div>
-                                <div>
-                                        <img src="img/sponsor_pepsi.png" alt="">
-                                </div>
-                                <div>
-                                        <img src="img/sponsor_ray_ban.png" alt="">
-                                </div>
-                                <div>
-                                        <img src="img/sponsor_james.png" alt="">
-                                </div>
+                                <flickity ref="flickity" v-if="data.sponsors && data.sponsors.length > 0">
+                                        <div class="carousel-cell gallery-cell" v-for="(item, key) of data.sponsors" :key="key" @click="showModal(key)">
+                                                <img :src="item.picture" alt="" style="height: 100px">
+                                        </div>
+                                </flickity>
                                 <div class="disabled-overlay" v-if="enabled == false"></div>
                         </div>
                 </div>
     <b-modal ref="sponsorModal" id="modal1" title="Edit Sponsor" hide-footer>
-        <EditSponsor  />
+        <EditSponsor  :request="(Object.keys(this.data).length == 0) ? 'post' : 'put'" @submit="closeModal" :index="editItem"
+        :data="data.sponsors ? data.sponsors : []" />
     </b-modal>
         </div>
 </template>
@@ -50,21 +25,32 @@
 <script>
 import Switches from 'vue-switches';
 import EditSponsor from '@/components/forms/EditSponsor';
+import Flickity from 'vue-flickity';
 export default {
     name: 'Sponsors',
     components: {
             Switches,
-            EditSponsor
+            EditSponsor,
+            Flickity
     },
+    props: ['data'],
     data() {
             return {
-                    enabled: true
+                    enabled: true,
+                    editItem: false
             }
     },
         methods: {
-                showModal() {
+                showModal(edit = false) {
+                        this.editItem = edit;
                         this.$refs.sponsorModal.show();
-                }
+                },
+    closeModal() {
+      if (this.editItem !== false)
+        this.$emit("refresh");
+      this.$refs.sponsorModal.hide();
+        this.$emit("refresh");
+    }
         }
 }
 </script>

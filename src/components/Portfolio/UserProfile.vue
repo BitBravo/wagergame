@@ -1,5 +1,5 @@
 <template>
-    <div class="row profile">
+    <div class="row profile" :style="{'background-image':'url('+fields.coverPhoto+')'}">
         <div class="col-md-2 person">
                 <img style="width: 150px; height: 150px; border-radius: 150px" :src="fields.profilePic ? fields.profilePic : 'img/person.png'" alt="Hero">
         </div>
@@ -77,7 +77,9 @@ export default {
 
 <style>
     .profile {
-        background-image: url('~@/assets/cover.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center
     }
     #modal1 {
         color: black;

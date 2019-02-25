@@ -50,14 +50,7 @@
         <b-button type="submit" variant="primary">Submit</b-button>
       </div>
     </b-form>
-    {{data}}
   </div>
-  <!-- tournamentName: String,
-        acheivementName: String,
-        imgPath: String,
-        imgName: String,
-        dateOfAcheivement: Date,
-        venueOfAcheivemnet: String -->
 </template>
 
 <script>
