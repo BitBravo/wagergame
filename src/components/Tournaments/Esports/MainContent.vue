@@ -11,18 +11,17 @@
                 alt="Img"
                 top
                 width="80%"/>
-         <b-button href="#/tournaments/ios/fortnite" variant="success" block>More Details</b-button>
+         <b-button href="#/tournaments/esports/fortnite" variant="success" block>More Details</b-button>
                
         </b-card>
-        
-           <b-card 
-        title="8-ball Pool">
+ <b-card 
+        title="DotA 2">
         <b-card-img 
-                src="/images/8ballpool.jpg"
+                src="/img/Dota2logo.png"
                 alt="Img"
                 top
                 width="80%"/>
-                <b-button variant="success" block>More Details</b-button>
+                <b-button href="#/tournaments/esports/dota2" variant="success" block>More Details</b-button>
         </b-card>
       
                 <b-card 
@@ -34,7 +33,15 @@
                 width="80%"/>
                 <b-button variant="success" block>More Details</b-button>
         </b-card>
-       
+        <b-card 
+        title="DotA 2">
+        <b-card-img 
+                src="/img/Dota2logo.png"
+                alt="Img"
+                top
+                width="80%"/>
+                <b-button href="#/tournaments/esports/dota2" variant="success" block>More Details</b-button>
+        </b-card>
            <b-card 
         title="Golf Battle">
         <b-card-img 
@@ -43,6 +50,15 @@
                 top
                 width="80%"/>
                 <b-button variant="success" block>More Details</b-button>
+        </b-card>
+         <b-card 
+        title="DotA 2">
+        <b-card-img 
+                src="/img/Dota2logo.png"
+                alt="Img"
+                top
+                width="80%"/>
+                <b-button href="#/tournaments/esports/dota2" variant="success" block>More Details</b-button>
         </b-card>
                 <b-card 
                 title="Basketball Stars">

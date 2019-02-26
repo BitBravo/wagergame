@@ -33,14 +33,31 @@ import TournamentsIOSFortnite from '@/views/TournamentsIOSFortnite.vue'
 import TournamentsIOSFortnite1 from '@/views/TournamentsIOSFortnite1.vue'
 import TournamentsAndroid from '@/views/TournamentsAndroid.vue'
 import TournamentsAndroid8ballpool from '@/views/TournamentsAndroid8ballpool.vue'
-
 import TournamentsAndroid8ballpool1 from '@/views/TournamentsAndroid8ballpool1.vue'
+import TournamentsEsports from '@/views/TournamentsEsports.vue'
+import TournamentsEsportsDota2 from '@/views/TournamentsEsportsDota2.vue'
+import TournamentsEsportsDota21 from '@/views/TournamentsEsportsDota21.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-      
+    {
+      path: '/tournaments/esports',
+      name: 'TournamentsEsports',
+      component: TournamentsEsports
+    },
+    {
+      path: '/tournaments/esports/dota2',
+      name: 'TournamentsEsportsDota2',
+      component: TournamentsEsportsDota2
+    },
+    {
+      path: '/tournaments/esports/dota2/1',
+      name: 'TournamentsEsportsDota21',
+      component: TournamentsEsportsDota21
+    },
+    
     {
       path: '/h2h/android/8ballpool',
       name: 'H2HAndroid8ballpool',
