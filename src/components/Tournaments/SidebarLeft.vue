@@ -5,11 +5,14 @@
         <ul>
                 
   
-<li><a class="" href="http://localhost:8080" style="text-decoration: none;">Home</a>  <v-divider/></li>
-<li><a class="" href="http://localhost:8080" style="text-decoration: none;">Esports games</a>  <v-divider/></li>
-<li><a class="" href="http://localhost:8080" style="text-decoration: none;">iOS games</a>  <v-divider/></li>   
-<li><a class="" href="http://localhost:8080" style="text-decoration: none;">Android games</a>  <v-divider/></li> 
-<li><a class="" href="http://localhost:8080" style="text-decoration: none;">Android games</a>  <v-divider/></li>           
+<li><a class="" href="/" style="text-decoration: none;">Home</a>  <v-divider/></li>
+<li><a class="" href="#/tournaments/esports" style="text-decoration: none;">Esports tournaments</a>  <v-divider/></li>
+<li><a class="" href="#/h2h/esports" style="text-decoration: none;">Esports h2h</a>  <v-divider/></li>   
+<li><a class="" href="#/tournaments/android" style="text-decoration: none;">Android tournaments</a>  <v-divider/></li> 
+<li><a class="" href="#/h2h/android" style="text-decoration: none;">Android h2h</a>  <v-divider/></li>
+<li><a class="" href="#/tournaments/ios" style="text-decoration: none;">iOS tournaments</a>  <v-divider/></li>   
+<li><a class="" href="#/h2h/ios" style="text-decoration: none;">iOS h2h</a>  <v-divider/></li> 
+<li><a class="" href="#/browser" style="text-decoration: none;">Browser based games</a>  <v-divider/></li>           
           
          
            

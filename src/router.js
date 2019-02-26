@@ -22,25 +22,49 @@ import SponsorsForm from '@/views/SponsorsForm.vue'
 import Screenshots from '@/views/Screenshots.vue'
 import ScreenshotsForm from '@/views/ScreenshotsForm.vue'
 import Dota2 from '@/views/Dota2.vue'
+import H2H from '@/views/H2H.vue'
 import Tournaments from '@/views/Tournaments.vue'
 import H2HIOS from '@/views/H2HIOS.vue'
-import FortniteIOS from '@/views/FortniteIOS.vue'
+import H2HAndroid from '@/views/H2HAndroid.vue'
+import H2HAndroid8ballpool from '@/views/H2HAndroid8ballpool.vue'
+import H2HAndroid8ballpool1 from '@/views/H2HAndroid8ballpool1.vue'
 import TournamentsIOS from '@/views/TournamentsIOS.vue'
 import TournamentsIOSFortnite from '@/views/TournamentsIOSFortnite.vue'
 import TournamentsIOSFortnite1 from '@/views/TournamentsIOSFortnite1.vue'
+import TournamentsAndroid from '@/views/TournamentsAndroid.vue'
+import TournamentsAndroid8ballpool from '@/views/TournamentsAndroid8ballpool.vue'
+
+import TournamentsAndroid8ballpool1 from '@/views/TournamentsAndroid8ballpool1.vue'
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
+      
     {
-      path: '/h2h/ios/fortnite',
-      name: 'FortniteIOS',
-      component: FortniteIOS
+      path: '/h2h/android/8ballpool',
+      name: 'H2HAndroid8ballpool',
+      component: H2HAndroid8ballpool
+    },  
+    {
+      path: '/h2h/android/8ballpool/1',
+      name: 'H2HAndroid8ballpool1',
+      component: H2HAndroid8ballpool1
+    },
+    {
+      path: '/h2h/',
+      name: 'H2H',
+      component: H2H
     },
     {
       path: '/h2h/ios',
       name: 'H2HIOS',
       component: H2HIOS
+    },
+    {
+      path: '/h2h/android',
+      name: 'H2HAndroid',
+      component: H2HAndroid
     },
     {
       path: '/tournaments/ios/fortnite',
@@ -56,6 +80,21 @@ export default new Router({
       path: '/tournaments/ios',
       name: 'TournamentsIOS',
       component: TournamentsIOS
+    },
+    {
+      path: '/tournaments/android',
+      name: 'TournamentsAndroid',
+      component: TournamentsAndroid
+    },
+    {
+      path: '/tournaments/android/8ballpool',
+      name: 'TournamentsAndroid8ballpool',
+      component: TournamentsAndroid8ballpool
+    },
+    {
+      path: '/tournaments/android/8ballpool/1',
+      name: 'TournamentsAndroid8ballpool1',
+      component: TournamentsAndroid8ballpool1
     },
     {
       path: '/tournaments',

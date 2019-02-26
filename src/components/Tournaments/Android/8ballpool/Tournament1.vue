@@ -4,7 +4,7 @@
      <b-container class="bv-example-row">
   <b-row>
     <b-col><div style="text-align: left">
-<img style="text-align: left; width: 150px; height: 150px; border-radius: 150px" :src="fields.profilePic ? fields.profilePic : 'images/fortnite.jpg'" alt="Hero">
+<img style="text-align: left; width: 150px; height: 150px; border-radius: 150px" :src="fields.profilePic ? fields.profilePic : 'images/8ballpool.jpg'" alt="Hero">
    </div></b-col>
 <b-col><h5 style="color: white; font-size: 18px;"><b>$5 Tournament</b></h5>
     <h5 style="color: grey; font-size: 16px;">Battle Royale</h5>
