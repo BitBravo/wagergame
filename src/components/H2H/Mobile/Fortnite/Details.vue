@@ -31,21 +31,22 @@
             avatar2
           >
            <v-list-tile-action>
-              <div v-if="item.online"> 
-      <i class="fas fa-comment"></i></div>
-                <v-icon v-else class="offline2"/>
+           <span style="font-size: 3em; color: Tomato;">
+       <i class="fas fa-american-sign-language-interpreting"></i></span>
             </v-list-tile-action>
-            <v-list-tile-action>
-     
-            
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title v-text="item.title"></v-list-tile-title>
-            </v-list-tile-content>
+            <span style="font-size: 3em; color: Dodgerblue;">
+            <i class="fas fa-comment"/>
+              </span>
+              <v-chip v-text="item.title" color="green" text-color="white">
+      <v-avatar class="green darken-4">1</v-avatar>
+      Years
+    </v-chip>
 
-            <v-list-tile-avatar>
-              <img :src="item.avatar">
-            </v-list-tile-avatar>
+     
+
+             <v-avatar> <img :src="item.avatar"> </v-avatar>
+           
+               </v-chip>
           </v-list-tile>
         </v-list>
           
