@@ -28,6 +28,12 @@ import H2HIOS from '@/views/H2HIOS.vue'
 import H2HAndroid from '@/views/H2HAndroid.vue'
 import H2HAndroid8ballpool from '@/views/H2HAndroid8ballpool.vue'
 import H2HAndroid8ballpool1 from '@/views/H2HAndroid8ballpool1.vue'
+import H2HAndroidForm from '@/views/H2HAndroidForm.vue'
+import H2HIOSForm from '@/views/H2HIOSForm.vue'
+import H2HEsportsForm from '@/views/H2HEsportsForm.vue'
+import H2HEsports from '@/views/H2HEsports.vue'
+import H2HEsportsDota2 from '@/views/H2HEsportsDota2.vue'
+import H2HEsportsDota21 from '@/views/H2HEsportsDota21.vue'
 import TournamentsIOS from '@/views/TournamentsIOS.vue'
 import TournamentsIOSFortnite from '@/views/TournamentsIOSFortnite.vue'
 import TournamentsIOSFortnite1 from '@/views/TournamentsIOSFortnite1.vue'
@@ -37,11 +43,63 @@ import TournamentsAndroid8ballpool1 from '@/views/TournamentsAndroid8ballpool1.v
 import TournamentsEsports from '@/views/TournamentsEsports.vue'
 import TournamentsEsportsDota2 from '@/views/TournamentsEsportsDota2.vue'
 import TournamentsEsportsDota21 from '@/views/TournamentsEsportsDota21.vue'
-
+import TournamentsEsportsForm from '@/views/TournamentsEsportsForm.vue'
+import TournamentsAndroidForm from '@/views/TournamentsAndroidForm.vue'
+import TournamentsIOSForm from '@/views/TournamentsIOSForm.vue'
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/H2H/IOS/form',
+      name: 'H2HIOSForm',
+      component: H2HIOSForm
+    },
+
+    {
+      path: '/H2H/Android/form',
+      name: 'H2HIOSForm',
+      component: H2HAndroidForm
+    },
+
+    {
+      path: '/H2H/Esports/form',
+      name: 'H2HEsportsForm',
+      component: H2HEsportsForm
+    },
+
+    {
+      path: '/tournaments/IOS/form',
+      name: 'TournamentsIOSForm',
+      component: TournamentsIOSForm
+    },
+    {
+      path: '/tournaments/android/form',
+      name: 'TournamentsAndroidForm',
+      component: TournamentsAndroidForm
+    },
+    {
+      path: '/tournaments/esports/form',
+      name: 'TournamentsEsportsForm',
+      component: TournamentsEsportsForm
+    },
+    
+    {
+      path: '/h2h/esports',
+      name: 'H2HEsports',
+      component: H2HEsports
+    },
+    {
+      path: '/h2h/esports/dota2',
+      name: 'H2HEsportsDota2',
+      component: H2HEsportsDota2
+    },
+    {
+      path: '/h2h/esports/dota2/1',
+      name: 'H2HEsportsDota21',
+      component: H2HEsportsDota21
+    },
+    
     {
       path: '/tournaments/esports',
       name: 'TournamentsEsports',

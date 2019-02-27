@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-8 main-content">
          <div>
-                  <h5 class="heading2">H2H </h5>
+                  <h5 class="heading2">iOS H2H</h5>
                   <div v-if="counter ==1">
     <b-card-group columns>
         <b-card 

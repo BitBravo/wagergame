@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-8 main-content">
          <div>
-                  <h5 class="heading2">H2H Fortnite iOS</h5>
+                  <h5 class="heading2">Dota2 Esports Tournaments</h5>
                   <div v-if="counter ==1">
     <b-card-group columns>
         <b-card 
@@ -9,7 +9,7 @@
                 <h5>$1000 Prize pool</h5>
                    <h5>120/200 Entries</h5>
                  <h5>Organizer: WagerGames</h5>
-         <b-button variant="success" href="#/tournaments/ios/fortnite/1" block>More Details</b-button>
+         <b-button variant="success" href="#/tournaments/esports/dota2/1" block>More Details</b-button>
                
         </b-card>
         
