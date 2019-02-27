@@ -29,6 +29,7 @@ import H2HMobile8ballpool from '@/views/H2HMobile8ballpool.vue'
 import H2HMobile8ballpool1 from '@/views/H2HMobile8ballpool1.vue'
 import H2HMobileForm from '@/views/H2HMobileForm.vue'
 import H2HMobileFortniteDetails from '@/views/H2HMobileFortniteDetails.vue'
+import H2HMobileFortniteMatches from '@/views/H2HMobileFortniteMatches.vue'
 import H2HEsportsForm from '@/views/H2HEsportsForm.vue'
 import H2HEsports from '@/views/H2HEsports.vue'
 import H2HEsportsDota2 from '@/views/H2HEsportsDota2.vue'
@@ -45,10 +46,16 @@ import TournamentsEsportsDota21 from '@/views/TournamentsEsportsDota21.vue'
 import TournamentsEsportsForm from '@/views/TournamentsEsportsForm.vue'
 import TournamentsMobileForm from '@/views/TournamentsMobileForm.vue'
 
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/H2H/mobile/fortnite/matches',
+      name: 'H2HMobileFortniteMatches',
+      component: H2HMobileFortniteMatches
+    },
     {
       path: '/H2H/mobile/fortnite/details',
       name: 'H2HEmobileFortniteDetails',

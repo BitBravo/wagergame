@@ -27,6 +27,10 @@
  <span style="color: grey;" class="name">
 https://www.epicgames.com/fortnite/en-US/download
  </span></p>
+     <p style="color: white; text-align: left; font-size: 16px;">Compatibility: 
+ <span style="color: grey;" class="name">
+PC only.
+ </span></p>
   <p style="color: white; text-align: left; font-size: 16px;">Minimum Requirements: 
  <span style="color: grey;" class="name">
 CPU: Core i3 2.4 Ghz
@@ -52,6 +56,7 @@ DEDICATED VIDEO RAM: 2048 MB
  <span style="color: grey;" class="name">
 Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite: Save the World, a cooperative shooter-survival game for up to four players to fight off zombie-like creatures and defend objects with fortifications they can build, Fortnite Battle Royale, a free-to-play battle royale game where up to 100 players fight to be the last person standing, and Fortnite Creative, where players are given complete freedom to create worlds and battle arenas. The first two game modes were released in 2017 as early access titles and Creative was released on December 6, 2018. Save the World is available only for Windows, macOS, PlayStation 4, and Xbox One, while Battle Royale has been released for those platforms in addition for Nintendo Switch, iOS and mobile devices.
  </span></p>
+
 
 
   <b-button block variant="success">View Tournaments</b-button>

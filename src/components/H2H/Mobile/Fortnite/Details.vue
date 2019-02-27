@@ -27,26 +27,12 @@
  <span style="color: grey;" class="name">
 https://www.epicgames.com/fortnite/en-US/download
  </span></p>
-  <p style="color: white; text-align: left; font-size: 16px;">Minimum Requirements: 
+     <p style="color: white; text-align: left; font-size: 16px;">Compatibility: 
  <span style="color: grey;" class="name">
-CPU: Core i3 2.4 Ghz
-CPU SPEED: Info
-RAM: 4 GB
-OS: Windows 7/8/10 64-bit
-VIDEO CARD: Intel HD 4000
-PIXEL SHADER: 3.0
-VERTEX SHADER: 3.0
- </span></p>
-  <p style="color: white; text-align: left; font-size: 16px;">Recommended Requirements: 
- <span style="color: grey;" class="name">
-CPU: Core i5 2.8 Ghz
-CPU SPEED: Info
-RAM: 8 GB
-OS: Windows 7/8/10 64-bit
-VIDEO CARD: Nvidia GTX 660 or AMD Radeon HD 7870 equivalent DX11 GPU
-PIXEL SHADER: 5.0
-VERTEX SHADER: 5.0
-DEDICATED VIDEO RAM: 2048 MB
+iOS and Android </span></p>
+  <p style="color: white; text-align: left; font-size: 16px;">Languages: 
+ <span style="color: grey;" class="name">English, Spanish
+
  </span></p>
    <p style="color: white; text-align: left; font-size: 16px;">Description: 
  <span style="color: grey;" class="name">
@@ -54,7 +40,7 @@ Fortnite is an online video game developed by Epic Games and released in 2017. I
  </span></p>
 
 
-  <b-button block variant="success">View Tournaments</b-button>
+  <b-button block variant="success" href="#/h2h/mobile/fortnite/matches">View Tournaments</b-button>
 
   
 
