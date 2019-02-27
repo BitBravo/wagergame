@@ -13,17 +13,7 @@
 <h6 style="text-align: center; font-size:16 px; color: black;">4.92 star average</h6>
      </div></b-col>
 <b-col>
-  
-<v-sheet
-          class="d-flex"
-          color="grey lighten-3"
-          height="320"
-        >    </v-sheet>
-
-</b-col>
-    <b-col style="border: thick;">
-      
-      <h5 class="heading-90">Top 5 Players</h5>
+ <h5 class="heading-90">Top 5 Players</h5>
        <v-sheet
             class="d-flex"
             color="grey lighten-3"
@@ -36,11 +26,10 @@
             avatar
             @click=""
           >
-          <p style="font-size: 10px;">
+ 
             <v-list-tile-action>
-              <v-icon v-if="item.icon" color="pink">star</v-icon>
+              <div v-if="item.online = 1" class="online2"/>
             </v-list-tile-action>
-</p>
             <v-list-tile-content>
               <v-list-tile-title v-text="item.title"></v-list-tile-title>
             </v-list-tile-content>
@@ -52,8 +41,8 @@
         </v-list>
           
           </v-sheet>
-        </b-col>
-
+</b-col>
+   
   </b-row>
 
 </b-container>
@@ -96,6 +85,28 @@ iOS and Android </span></p>
  <span style="color: grey;" class="name">
 Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite: Save the World, a cooperative shooter-survival game for up to four players to fight off zombie-like creatures and defend objects with fortifications they can build, Fortnite Battle Royale, a free-to-play battle royale game where up to 100 players fight to be the last person standing, and Fortnite Creative, where players are given complete freedom to create worlds and battle arenas. The first two game modes were released in 2017 as early access titles and Creative was released on December 6, 2018. Save the World is available only for Windows, macOS, PlayStation 4, and Xbox One, while Battle Royale has been released for those platforms in addition for Nintendo Switch, iOS and Android devices.
  </span></p>
+  <p style="color: white; text-align: left; font-size: 16px;">Minimum Requirements: 
+ <span style="color: grey;" class="name">
+CPU: Core i3 2.4 Ghz
+CPU SPEED: Info
+RAM: 4 GB
+OS: Windows 7/8/10 64-bit
+VIDEO CARD: Intel HD 4000
+PIXEL SHADER: 3.0
+VERTEX SHADER: 3.0
+ </span></p>
+  <p style="color: white; text-align: left; font-size: 16px;">Recommended Requirements: 
+ <span style="color: grey;" class="name">
+CPU: Core i5 2.8 Ghz
+CPU SPEED: Info
+RAM: 8 GB
+OS: Windows 7/8/10 64-bit
+VIDEO CARD: Nvidia GTX 660 or AMD Radeon HD 7870 equivalent DX11 GPU
+PIXEL SHADER: 5.0
+VERTEX SHADER: 5.0
+DEDICATED VIDEO RAM: 2048 MB
+ </span></p>
+
 
 
   <b-button block variant="success" href="#/h2h/mobile/fortnite/matches">View Tournaments</b-button>
@@ -152,7 +163,7 @@ export default {
     return {
       items: [
           { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
-          { title: 'Travis Howard', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg' },
+          { online: '1', title: 'Travis Howard', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg' },
           { title: 'Ali Connors', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg' },
           { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
            { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' }
