@@ -4,15 +4,45 @@
                   <h5 class="heading2">Fortnite iOS Tournaments</h5>
                   <div v-if="counter ==1">
     <b-card-group columns>
-        <b-card 
-                title="$5 Tournament">
-                <h5>$1000 Prize pool</h5>
-                   <h5>120/200 Entries</h5>
-                 <h5>Organizer: WagerGames</h5>
-         <b-button variant="success" href="#/tournaments/ios/fortnite/1" block>More Details</b-button>
-               
-        </b-card>
+      <b-card>
+
+                 
+               <h5 class="heading-90">Come get wrecked!</h5>
+               <b-card-img 
+                src="/images/fortnite.jpg"
+                alt="Img"
+                top
+                width="80%"/>      <h5 class="heading-90"> <v-avatar class="blue">$5</v-avatar>    Entry
+      
+              <v-chip small>
+            <v-avatar class="yellow">$10</v-avatar>    Prize
+          </v-chip>&nbsp; 
+             <v-list dense dark >
+               <span>
+                 
+          <v-list-tile
+            v-for="item in items"
+            :key="item.title"
+            avatar
+            @click=""
+          >
+ 
+      
+            <v-list-tile-content>
+              <v-list-tile-title v-text="item.title"></v-list-tile-title>
+            </v-list-tile-content>
+
+            <v-list-tile-avatar>
+              <img :src="item.avatar">
+            </v-list-tile-avatar>
+          </v-list-tile>
+   </span>
+        </v-list>
+        {{ H2HCount1 }}/{{ H2HCount2 }} players registered         <div class="online2"/>
+              </h5> 
+         <b-button variant="success" href="#/h2h/mobile/fortnite/details" block>Join Match</b-button>
         
+        </b-card>
             <b-card 
                 title="$10 Tournament">
                 <h5>$2000 Prize pool</h5>

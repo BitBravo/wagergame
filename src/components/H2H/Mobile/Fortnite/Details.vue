@@ -3,7 +3,7 @@
   <b-card>
      <b-container class="bv-example-row">
   <b-row>
-    <b-col><div style="text-align: left; color: black;"></br>
+    <b-col><div style="text-align: left; color: black;">
 <img style="display: block; margin-left: auto; margin-right: auto; width: 150px; height: 150px; border-radius: 150px" :src="fields.profilePic ? fields.profilePic : 'images/fortnite.jpg'" alt="Hero">
  
  <h5 style="text-align: center; color: black; font-size: 18px;"><b>Fortnite </b> </h5>
@@ -13,8 +13,13 @@
 <h6 style="text-align: center; font-size:16 px; color: black;">4.92 star average</h6>
      </div></b-col>
 <b-col>
- <h5 class="heading-90">Top 5 Players</h5>
-       <v-sheet
+ <h5 class="heading-90">Fornite H2H Messenger</h5>
+<v-container
+      id="scroll-target"
+      style="max-height: 400px"
+      class="scroll-y"
+    >
+     <v-sheet
             class="d-flex"
             color="grey lighten-3"
             height="200"
@@ -23,12 +28,16 @@
           <v-list-tile
             v-for="item in items"
             :key="item.title"
-            avatar
-            @click=""
+            avatar2
           >
- 
+           <v-list-tile-action>
+              <div v-if="item.online"> 
+      <i class="fas fa-comment"></i></div>
+                <v-icon v-else class="offline2"/>
+            </v-list-tile-action>
             <v-list-tile-action>
-              <div v-if="item.online = 1" class="online2"/>
+     
+            
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title v-text="item.title"></v-list-tile-title>
@@ -41,8 +50,24 @@
         </v-list>
           
           </v-sheet>
+      <v-layout
+        v-scroll:#scroll-target="onScroll"
+        column
+        align-center
+        justify-center
+        style="height: 1000px"
+      >
+      </v-layout>
+      
+    </v-container>
+    
+          
+     
+    
+      
+  
 </b-col>
-   
+
   </b-row>
 
 </b-container>
@@ -157,16 +182,32 @@ DEDICATED VIDEO RAM: 2048 MB
 }
 </style>
 <script>
+
 export default {
+  props: {
+    
+  },
   name: 'Sponsors',
     data () {
     return {
       items: [
-          { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
+          { online: '1', icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
           { online: '1', title: 'Travis Howard', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg' },
-          { title: 'Ali Connors', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg' },
+          { online: '1', title: 'Ali Connors', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg' },
           { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
-           { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' }
+          { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+           { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+          { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+           { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+          { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+           { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+          { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+           { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+          { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+           { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+          { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+           { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+          { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' }
         ]
     }
     }

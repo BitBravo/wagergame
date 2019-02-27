@@ -4,13 +4,41 @@
                   <h5 class="heading2">8-ball pool mobile Tournaments</h5>
                   <div v-if="counter ==1">
     <b-card-group columns>
-        <b-card 
-                title="$5 Tournament">
-                <h5>$1000 Prize pool</h5>
-                   <h5>120/200 Entries</h5>
-                 <h5>Organizer: WagerGames</h5>
-         <b-button variant="success" href="#/tournaments/mobile/8ballpool/1" block>More Details</b-button>
-               
+       <b-card>
+
+                 
+               <h5 class="heading-90">Come get wrecked!</h5>
+               <b-card-img 
+                src="/images/fortnite.jpg"
+                alt="Img"
+                top
+                width="80%"/>      <h5 class="heading-90"> <v-avatar class="blue"><b> $5</b></v-avatar>    Entry
+  <v-avatar class="orange"> <b> $500</b></v-avatar>  Prize
+      
+             &nbsp; 
+             <v-list dense dark >
+               <span>
+          <v-list-tile
+            v-for="item in items"
+            :key="item.title"
+            avatar
+            @click=""
+          >
+ 
+      
+            <v-list-tile-content>
+              <v-list-tile-title v-text="item.title"></v-list-tile-title>
+            </v-list-tile-content>
+
+            <v-list-tile-avatar>
+              <img :src="item.avatar">
+            </v-list-tile-avatar>
+          </v-list-tile></span>
+        </v-list>
+        {{ TournamentCount1 }}/{{ TournamentCount2 }} players registered         <div class="online2"/>
+              </h5> 
+         <b-button variant="success" href="#/tournament/mobile/fortnite/details" block>Join Match</b-button>
+        
         </b-card>
         
             <b-card 
@@ -262,7 +290,8 @@ export default {
     data () {
     return {
       counter: 1,
-
+      TournamentCount1: 22,     
+      TournamentCount2: 100,  
     }
     }
 }

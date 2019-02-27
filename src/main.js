@@ -9,6 +9,7 @@ import { ValidationProvider } from 'vee-validate';
 import VueLazyLoad from 'vue-lazyload';
 import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
+import '@/fa.config';
 
 Vue.use(Vuetify)
 Vue.use(VueLazyLoad)

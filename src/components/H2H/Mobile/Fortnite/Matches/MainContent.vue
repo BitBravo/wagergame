@@ -4,43 +4,7 @@
                   <h5 class="heading2">Mobile H2H Fortnite</h5>
                   <div v-if="counter ==1">
     <b-card-group columns>
-           <b-card>
-
-                 
-               
-               <b-card-img 
-                src="/images/fortnite.jpg"
-                alt="Img"
-                top
-                width="80%"/>      <h5 class="heading-90"> <v-avatar class="blue">$5</v-avatar>    Entry
-      
-              <v-chip small>
-            <v-avatar class="yellow">$10</v-avatar>    Prize
-          </v-chip>&nbsp; 
-             <v-list dense dark >
-               <span>
-          <v-list-tile
-            v-for="item in items"
-            :key="item.title"
-            avatar
-            @click=""
-          >
- 
-      
-            <v-list-tile-content>
-              <v-list-tile-title v-text="item.title"></v-list-tile-title>
-            </v-list-tile-content>
-
-            <v-list-tile-avatar>
-              <img :src="item.avatar">
-            </v-list-tile-avatar>
-          </v-list-tile></span>
-        </v-list>
-        {{ H2HCount1 }}/{{ H2HCount2 }} players registered         <div class="online2"/>
-              </h5> 
-         <b-button variant="success" href="#/h2h/mobile/fortnite/details" block>Join Match</b-button>
-        
-        </b-card>
+           
         
            <b-card 
         title="8-ball Pool">
