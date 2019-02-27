@@ -25,11 +25,14 @@ import Dota2 from '@/views/Dota2.vue'
 import H2H from '@/views/H2H.vue'
 import Tournaments from '@/views/Tournaments.vue'
 import H2HMobile from '@/views/H2HMobile.vue'
+import H2HMobileFortniteMatchesForm from '@/views/H2HMobileFortniteMatchesForm.vue'
 import H2HMobile8ballpool from '@/views/H2HMobile8ballpool.vue'
 import H2HMobile8ballpool1 from '@/views/H2HMobile8ballpool1.vue'
 import H2HMobileForm from '@/views/H2HMobileForm.vue'
 import H2HMobileFortniteDetails from '@/views/H2HMobileFortniteDetails.vue'
 import H2HMobileFortniteMatches from '@/views/H2HMobileFortniteMatches.vue'
+import H2HMobile8ballpoolDetails from '@/views/H2HMobile8ballpoolDetails.vue'
+import H2HMobile8ballpoolMatches from '@/views/H2HMobileFortniteMatches.vue'
 import H2HEsportsForm from '@/views/H2HEsportsForm.vue'
 import H2HEsports from '@/views/H2HEsports.vue'
 import H2HEsportsDota2 from '@/views/H2HEsportsDota2.vue'
@@ -51,6 +54,21 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/H2H/mobile/fortnite/matches/form',
+      name: 'H2HMobileForniteMatchesForm',
+      component: H2HMobileFortniteMatchesForm
+    },
+    {
+      path: '/H2H/mobile/8ballpool/details',
+      name: 'H2HMobile8ballpoolDetails',
+      component: H2HMobile8ballpoolDetails
+    },
+    {
+      path: '/H2H/mobile/8ballpool/matches',
+      name: 'H2HMobile8ballpoolMatches',
+      component: H2HMobile8ballpoolMatches
+    },
     {
       path: '/H2H/mobile/fortnite/matches',
       name: 'H2HMobileFortniteMatches',

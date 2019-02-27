@@ -40,7 +40,7 @@ Fortnite is an online video game developed by Epic Games and released in 2017. I
  </span></p>
 
 
-  <b-button block variant="success" href="#/h2h/mobile/fortnite/matches">View Tournaments</b-button>
+  <b-button block variant="success" href="#/h2h/mobile/fortnite/matches">View To  urnaments</b-button>
 
   
 

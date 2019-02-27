@@ -22,7 +22,7 @@
                 alt="Img"
                 top
                 width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
+                <b-button variant="success" href="#/h2h/mobile/8ballpool/details" block>Join Room</b-button>
         </b-card>
       
                 <b-card 
