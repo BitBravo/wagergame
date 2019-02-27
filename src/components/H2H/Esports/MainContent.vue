@@ -11,7 +11,7 @@
                 alt="Img"
                 top
                 width="80%"/>
-         <b-button href="#/h2h/ios/fortnite" variant="success" block>More Details</b-button>
+         <b-button href="#/h2h/esports/fortnite/details" variant="success" block>More Details</b-button>
                
         </b-card>
         

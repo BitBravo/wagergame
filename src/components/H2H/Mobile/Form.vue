@@ -1,7 +1,7 @@
   <template>
  <div class="col-md-8 main-content">
         
-                               <center> <h5 class="heading2" style="text-align: center;">iOS H2H - Game Submission</h5></center>
+                               <center> <h5 class="heading2" style="text-align: center;">H2H mobile - Game Submission</h5></center>
   <b-card>
   <b-form  @submit="onSubmit" @reset="onReset" >
     <h5>Game Submission</h5>

@@ -1,123 +1,112 @@
 <template>
     <div class="col-md-8 main-content">
          <div>
-                  <h5 class="heading2">iOS H2H</h5>
+                  <h5 class="heading2">H2H mobile 8-ball Pool</h5>
                   <div v-if="counter ==1">
     <b-card-group columns>
         <b-card 
-                title="Fornite">
-               <b-card-img 
-                src="/images/fortnite.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-         <b-button variant="success" href="#/h2h/mobile/fortnite/details" block>Join Room</b-button>
+                title="$5 H2H">
+                <h5>$10 Prize pool</h5>
+                   <h5>1/2 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" href="#/h2h/mobile/8ballpool/1" block>More Details</b-button>
                
         </b-card>
         
-           <b-card 
-        title="8-ball Pool">
-        <b-card-img 
-                src="/images/8ballpool.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
+            <b-card 
+                title="$10 H2H">
+                <h5>$20 Prize pool</h5>
+                   <h5>1/2 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" block>More Details</b-button>
+               
         </b-card>
       
-                <b-card 
-                title="Soccer Stars">
-               <b-card-img 
-                src="/images/soccerstars.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
+                  <b-card 
+                title="$20 H2H">
+                <h5>$40 Prize pool</h5>
+                   <h5>1/2 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" block>More Details</b-button>
+               
         </b-card>
        
-           <b-card 
-        title="Golf Battle">
-        <b-card-img 
-                src="/images/golfbattle.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
-        </b-card>
-                <b-card 
-                title="Basketball Stars">
-               <b-card-img 
-                src="/images/basketballstars.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
-        </b-card>
-       
-           <b-card 
-        title="Archery">
-        <b-card-img 
-                src="/images/archery.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
-        </b-card>
-       
-                <b-card 
-                title="Mobile Legends">
-               <b-card-img 
-                src="/images/mobilelegends.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
-        </b-card>
-       
-           <b-card 
-        title="PUBG">
-        <b-card-img 
-                src="/images/pubg.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
-        </b-card>
-                <b-card 
-                title="Bowling King">
-               <b-card-img 
-                src="/images/bowlingking.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
-        </b-card>
-           <b-card 
-        title="Football Strike">
-        <b-card-img 
-                src="/images/icon_football.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
-        </b-card>
-               <b-card 
-        title="Hockey Stars">
-        <b-card-img 
-                src="/images/hockeystars.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
-        </b-card>
           <b-card 
-        title="WCC2">
-        <b-card-img 
-                src="/images/wc2.jpg"
-                alt="Img"
-                top
-                width="80%"/>
-                <b-button variant="success" block>Join Room</b-button>
+                title="$100 Tournament">
+                <h5>$200 Prize pool</h5>
+                   <h5>1/2 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" block>More Details</b-button>
+               
+        </b-card>
+                 <b-card 
+                title="$500 Tournament">
+                <h5>$1000 Prize pool</h5>
+                   <h5>1/2 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" block>More Details</b-button>
+               
+        </b-card>
+        
+            <b-card 
+                title="$1000 Tournament">
+                <h5>$2000 Prize pool</h5>
+                   <h5>1/2 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" block>More Details</b-button>
+               
+        </b-card>
+      
+                  <b-card 
+                title="$10000 Tournament">
+                <h5>$20000 Prize pool</h5>
+                   <h5>1/2 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" block>More Details</b-button>
+               
+        </b-card>
+       
+          <b-card 
+                title="$100 Tournament">
+                <h5>$20000 Prize pool</h5>
+                   <h5>120/200 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" block>More Details</b-button>
+               
+        </b-card>    <b-card 
+                title="$5 Tournament">
+                <h5>$1000 Prize pool</h5>
+                   <h5>120/200 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" block>More Details</b-button>
+               
+        </b-card>
+        
+            <b-card 
+                title="$10 Tournament">
+                <h5>$2000 Prize pool</h5>
+                   <h5>120/200 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" block>More Details</b-button>
+               
+        </b-card>
+      
+                  <b-card 
+                title="$20 Tournament">
+                <h5>$4000 Prize pool</h5>
+                   <h5>120/200 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" block>More Details</b-button>
+               
+        </b-card>
+       
+          <b-card 
+                title="$100 Tournament">
+                <h5>$20000 Prize pool</h5>
+                   <h5>120/200 Entries</h5>
+                 <h5>Organizer: WagerGames</h5>
+         <b-button variant="success" block>More Details</b-button>
+               
         </b-card>
 
     </b-card-group>
@@ -273,7 +262,7 @@ export default {
     data () {
     return {
       counter: 1,
-      
+
     }
     }
 }

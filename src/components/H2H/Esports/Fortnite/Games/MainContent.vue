@@ -1,8 +1,8 @@
 <template>
     <div class="col-md-8 main-content">
          <div>
-                  <h5 class="heading2">H2H iOS</h5>
-                  <div v-if="h2h_ios_counter ==1">
+                  <h5 class="heading2">Esports H2H</h5>
+                  <div v-if="h2h_esports_counter == 1">
     <b-card-group columns>
         <b-card 
                 title="Fortnite">
@@ -11,7 +11,7 @@
                 alt="Img"
                 top
                 width="80%"/>
-         <b-button href="#/h2h/ios/fortnite" variant="success" block>More Details</b-button>
+         <b-button href="#/h2h/esports/fortnite" variant="success" block>More Details</b-button>
                
         </b-card>
         
@@ -121,11 +121,11 @@
         </b-card>
 
     </b-card-group>
-      <b-button block variant="primary" v-on:click="h2h_ios_counter += 1">Next page</b-button>
-       <b-button block href="#/h2h/ios/form" variant="success">Submit a game</b-button>
+      <b-button block variant="primary" v-on:click="h2h_esports_counter += 1">Next page</b-button>
+       <b-button block href="#/h2h/esports/form" variant="success">Submit a game</b-button>
     </div>
 
-    <div v-if="h2h_ios_counter ==2">
+     <div v-if="h2h_esports_counter == 2">
     <b-card-group columns>
         <b-card 
                 title="Fortnite">
@@ -244,15 +244,17 @@
         </b-card>
 
     </b-card-group>
-      <b-button block variant="primary" v-on:click="h2h_ios_counter += 1">Next page</b-button>
-      <b-button block variant="primary" v-on:click="h2h_ios_counter -= 1">Previous page</b-button>
-       <b-button block href="#/h2h/ios/form" variant="success">Submit a game</b-button>
+      <b-button block variant="primary" v-on:click="h2h_esports_counter += 1">Next page</b-button>
+            <b-button block variant="primary" v-on:click="h2h_esports_counter -= 1">Previous page</b-button>
+
+       <b-button block href="#/h2h/esports/form" variant="success">Submit a game</b-button>
     </div>
-     <div v-if="h2h_ios_counter == 3">
+     
+    <div v-if="h2h_esports_counter == 3">
    <b-alert show> No more games to show</b-alert>
 
-      <b-button block variant="primary" v-on:click="h2h_ios_counter -= 1">Previous page</b-button>
-       <b-button block href="#/h2h/ios/form" variant="success">Submit a game</b-button>
+      <b-button block variant="primary" v-on:click="h2h_esports_counter -= 1">Previous page</b-button>
+       <b-button block href="#/h2h/esports/form" variant="success">Submit a game</b-button>
     </div>
 
 </div>
@@ -268,14 +270,17 @@
 
 <script>
 export default {
+        
   name: 'Sponsors',
     data () {
     return {
-      h2h_ios_counter: 1,
+    h2h_esports_counter: 1,
+    }
+ }
+    
 
-    }
-    }
 }
+
 
 
 </script>

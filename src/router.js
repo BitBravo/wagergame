@@ -24,42 +24,57 @@ import ScreenshotsForm from '@/views/ScreenshotsForm.vue'
 import Dota2 from '@/views/Dota2.vue'
 import H2H from '@/views/H2H.vue'
 import Tournaments from '@/views/Tournaments.vue'
-import H2HIOS from '@/views/H2HIOS.vue'
-import H2HAndroid from '@/views/H2HAndroid.vue'
-import H2HAndroid8ballpool from '@/views/H2HAndroid8ballpool.vue'
-import H2HAndroid8ballpool1 from '@/views/H2HAndroid8ballpool1.vue'
-import H2HAndroidForm from '@/views/H2HAndroidForm.vue'
-import H2HIOSForm from '@/views/H2HIOSForm.vue'
+import H2HMobile from '@/views/H2HMobile.vue'
+import H2HMobile8ballpool from '@/views/H2HMobile8ballpool.vue'
+import H2HMobile8ballpool1 from '@/views/H2HMobile8ballpool1.vue'
+import H2HMobileForm from '@/views/H2HMobileForm.vue'
+import H2HMobileFortniteDetails from '@/views/H2HMobileFortniteDetails.vue'
 import H2HEsportsForm from '@/views/H2HEsportsForm.vue'
 import H2HEsports from '@/views/H2HEsports.vue'
 import H2HEsportsDota2 from '@/views/H2HEsportsDota2.vue'
 import H2HEsportsDota21 from '@/views/H2HEsportsDota21.vue'
-import TournamentsIOS from '@/views/TournamentsIOS.vue'
-import TournamentsIOSFortnite from '@/views/TournamentsIOSFortnite.vue'
-import TournamentsIOSFortnite1 from '@/views/TournamentsIOSFortnite1.vue'
-import TournamentsAndroid from '@/views/TournamentsAndroid.vue'
-import TournamentsAndroid8ballpool from '@/views/TournamentsAndroid8ballpool.vue'
-import TournamentsAndroid8ballpool1 from '@/views/TournamentsAndroid8ballpool1.vue'
+import H2HEsportsFortnite from '@/views/H2HEsportsFortnite.vue'
+import H2HEsportsFortnite1 from '@/views/H2HEsportsFortnite1.vue'
+import H2HEsportsFortniteDetails from '@/views/H2HEsportsFortniteDetails.vue'
+import TournamentsMobile from '@/views/TournamentsMobile.vue'
+import TournamentsMobile8ballpool from '@/views/TournamentsMobile8ballpool.vue'
+import TournamentsMobile8ballpool1 from '@/views/TournamentsMobile8ballpool1.vue'
 import TournamentsEsports from '@/views/TournamentsEsports.vue'
 import TournamentsEsportsDota2 from '@/views/TournamentsEsportsDota2.vue'
 import TournamentsEsportsDota21 from '@/views/TournamentsEsportsDota21.vue'
 import TournamentsEsportsForm from '@/views/TournamentsEsportsForm.vue'
-import TournamentsAndroidForm from '@/views/TournamentsAndroidForm.vue'
-import TournamentsIOSForm from '@/views/TournamentsIOSForm.vue'
+import TournamentsMobileForm from '@/views/TournamentsMobileForm.vue'
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/H2H/IOS/form',
-      name: 'H2HIOSForm',
-      component: H2HIOSForm
+      path: '/H2H/mobile/fortnite/details',
+      name: 'H2HEmobileFortniteDetails',
+      component: H2HMobileFortniteDetails
+    },
+    {
+      path: '/H2H/esports/fortnite/details',
+      name: 'H2HEsportsFortniteDetails',
+      component: H2HEsportsFortniteDetails
+    },
+    {
+      path: '/H2H/esports/fortnite',
+      name: 'H2HEsportsFortnite',
+      component: H2HEsportsFortnite
+    },
+    {
+      path: '/H2H/esports/fortnite/1',
+      name: 'H2HEsportsFortnite1',
+      component: H2HEsportsFortnite1
     },
 
+
     {
-      path: '/H2H/Android/form',
+      path: '/H2H/Mobile/form',
       name: 'H2HIOSForm',
-      component: H2HAndroidForm
+      component: H2HMobileForm
     },
 
     {
@@ -67,16 +82,10 @@ export default new Router({
       name: 'H2HEsportsForm',
       component: H2HEsportsForm
     },
-
     {
-      path: '/tournaments/IOS/form',
-      name: 'TournamentsIOSForm',
-      component: TournamentsIOSForm
-    },
-    {
-      path: '/tournaments/android/form',
-      name: 'TournamentsAndroidForm',
-      component: TournamentsAndroidForm
+      path: '/tournaments/Mobile/form',
+      name: 'TournamentsMobileForm',
+      component: TournamentsMobileForm
     },
     {
       path: '/tournaments/esports/form',
@@ -117,14 +126,14 @@ export default new Router({
     },
     
     {
-      path: '/h2h/android/8ballpool',
-      name: 'H2HAndroid8ballpool',
-      component: H2HAndroid8ballpool
+      path: '/h2h/Mobile/8ballpool',
+      name: 'H2HMobile8ballpool',
+      component: H2HMobile8ballpool
     },  
     {
-      path: '/h2h/android/8ballpool/1',
-      name: 'H2HAndroid8ballpool1',
-      component: H2HAndroid8ballpool1
+      path: '/h2h/Mobile/8ballpool/1',
+      name: 'H2HMobile8ballpool1',
+      component: H2HMobile8ballpool1
     },
     {
       path: '/h2h/',
@@ -132,44 +141,24 @@ export default new Router({
       component: H2H
     },
     {
-      path: '/h2h/ios',
-      name: 'H2HIOS',
-      component: H2HIOS
+      path: '/h2h/Mobile',
+      name: 'H2HMobile',
+      component: H2HMobile
     },
     {
-      path: '/h2h/android',
-      name: 'H2HAndroid',
-      component: H2HAndroid
+      path: '/tournaments/Mobile',
+      name: 'TournamentsMobile',
+      component: TournamentsMobile
     },
     {
-      path: '/tournaments/ios/fortnite',
-      name: 'TournamentsIOSFortnite',
-      component: TournamentsIOSFortnite
+      path: '/tournaments/Mobile/8ballpool',
+      name: 'TournamentsMobile8ballpool',
+      component: TournamentsMobile8ballpool
     },
     {
-      path: '/tournaments/ios/fortnite/1',
-      name: 'TournamentsIOSFortnite1',
-      component: TournamentsIOSFortnite1
-    },
-    {
-      path: '/tournaments/ios',
-      name: 'TournamentsIOS',
-      component: TournamentsIOS
-    },
-    {
-      path: '/tournaments/android',
-      name: 'TournamentsAndroid',
-      component: TournamentsAndroid
-    },
-    {
-      path: '/tournaments/android/8ballpool',
-      name: 'TournamentsAndroid8ballpool',
-      component: TournamentsAndroid8ballpool
-    },
-    {
-      path: '/tournaments/android/8ballpool/1',
-      name: 'TournamentsAndroid8ballpool1',
-      component: TournamentsAndroid8ballpool1
+      path: '/tournaments/Mobile/8ballpool/1',
+      name: 'TournamentsMobile8ballpool1',
+      component: TournamentsMobile8ballpool1
     },
     {
       path: '/tournaments',

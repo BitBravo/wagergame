@@ -1,8 +1,8 @@
 <template>
     <div class="col-md-8 main-content">
          <div>
-                  <h5 class="heading2">Android H2H</h5>
-                  <div v-if="h2h_android_counter == 1">
+                  <h5 class="heading2">Tournaments mobile</h5>
+                  <div v-if="tournaments_mobile_counter ==1">
     <b-card-group columns>
                     
            <b-card 
@@ -12,7 +12,7 @@
                 alt="Img"
                 top
                 width="80%"/>
-                <b-button variant="success" href="#/h2h/android/8ballpool" block>More Details</b-button>
+                <b-button variant="success" href="#/tournaments/mobile/8ballpool" block>More Details</b-button>
         </b-card>
 
         <b-card 
@@ -22,7 +22,7 @@
                 alt="Img"
                 top
                 width="80%"/>
-         <b-button href="#/tournaments/android/fortnite" variant="success" block>More Details</b-button>
+         <b-button href="#/tournaments/mobile/fortnite" variant="success" block>More Details</b-button>
                
         </b-card>
 
@@ -122,11 +122,11 @@
         </b-card>
 
     </b-card-group>
-      <b-button block variant="primary" v-on:click="h2h_android_counter += 1">Next page</b-button>
-       <b-button block href="#/h2h/android/form" variant="success">Submit a game</b-button>
+      <b-button block variant="primary" v-on:click="tournaments_mobile_counter += 1">Next page</b-button>
+       <b-button block href="#/tournaments/mobile/form" variant="success">Submit a game</b-button>
     </div>
 
-    <div v-if="h2h_android_counter ==2">
+    <div v-if="tournaments_mobile_counter ==2">
     <b-card-group columns>
         <b-card 
                 title="Fortnite">
@@ -135,7 +135,7 @@
                 alt="Img"
                 top
                 width="80%"/>
-         <b-button href="#/h2h/ios/fortnite" variant="success" block>More Details</b-button>
+         <b-button href="#/tournaments/ios/fortnite" variant="success" block>More Details</b-button>
                
         </b-card>
         
@@ -245,14 +245,17 @@
         </b-card>
 
     </b-card-group>
-      <b-button block variant="primary" v-on:click="h2h_android_counter += 1">Next page</b-button>
-       <b-button block variant="primary" v-on:click="h2h_android_counter -= 1">Previous page</b-button>
-       <b-button block href="#/H2H/android/form" variant="success">Submit a game</b-button>
+      <b-button block variant="primary" v-on:click="tournaments_mobile_counter += 1">Next page</b-button>
+            <b-button block variant="primary" v-on:click="tournaments_mobile_counter -= 1">Previous page</b-button>
+
+       <b-button block href="#/tournaments/mobile/form" variant="success">Submit a game</b-button>
     </div>
-     <div v-if="h2h_android_counter == 3">
+     <div v-if="tournaments_mobile_counter > 2">
+
    <b-alert show> No more games to show</b-alert>
-          <b-button block variant="primary" v-on:click="h2h_android_counter -= 1">Previous page</b-button>
-          <b-button block href="#/H2H/android/form" variant="success">Submit a game</b-button>
+
+      <b-button block variant="primary" v-on:click="tournaments_mobile_counter -= 1">Previous page</b-button>
+       <b-button block href="#/tournaments/mobile/form" variant="success">Submit a game</b-button>
     </div>
 
 </div>
@@ -268,10 +271,10 @@
 
 <script>
 export default {
-  name: 'H2HAndroid',
+  name: 'Sponsors',
     data () {
     return {
-      h2h_android_counter: 1,
+      tournaments_mobile_counter: 1,
 
     }
     }

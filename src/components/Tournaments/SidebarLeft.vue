@@ -6,12 +6,12 @@
                 
   
 <li><a class="" href="/" style="text-decoration: none;">Home</a>  <v-divider/></li>
+<li><a class="" href="#/h2h/mobile" style="text-decoration: none;">Mobile h2h</a>  <v-divider/></li>
+<li><a class="" href="#/tournaments/mobile" style="text-decoration: none;">Mobile tournaments</a>  <v-divider/></li> 
 <li><a class="" href="#/tournaments/esports" style="text-decoration: none;">Esports tournaments</a>  <v-divider/></li>
 <li><a class="" href="#/h2h/esports" style="text-decoration: none;">Esports h2h</a>  <v-divider/></li>   
-<li><a class="" href="#/tournaments/android" style="text-decoration: none;">Android tournaments</a>  <v-divider/></li> 
-<li><a class="" href="#/h2h/android" style="text-decoration: none;">Android h2h</a>  <v-divider/></li>
-<li><a class="" href="#/tournaments/ios" style="text-decoration: none;">iOS tournaments</a>  <v-divider/></li>   
-<li><a class="" href="#/h2h/ios" style="text-decoration: none;">iOS h2h</a>  <v-divider/></li> 
+
+
           
          
            
