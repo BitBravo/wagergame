@@ -4,21 +4,79 @@
      <b-container class="bv-example-row">
   <b-row>
     <b-col><div style="text-align: left; color: black;"></br>
-<img style="text-align: left; width: 150px; height: 150px; border-radius: 150px" :src="fields.profilePic ? fields.profilePic : 'images/fortnite.jpg'" alt="Hero">
-</div></b-col>
-<b-col> </br><h5 style="color: black; font-size: 18px;"><b>Fortnite </b> </h5>
-    <h5 style="color: grey; font-size: 16px;">Battle Royale</h5>
-<h5 style="color: black; font-size: 16px;">Epic Games</h5>
-<p style="color: yellow; font-size: 26px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
-<p style="font-size:16 px; color: black;">4.92 star average</p>  
-<b-badge variant="danger" pill>18+</b-badge>
-</b-col> 
-    <b-col></b-col>
-<b-col></b-col>
+<img style="display: block; margin-left: auto; margin-right: auto; width: 150px; height: 150px; border-radius: 150px" :src="fields.profilePic ? fields.profilePic : 'images/fortnite.jpg'" alt="Hero">
+ 
+ <h5 style="text-align: center; color: black; font-size: 18px;"><b>Fortnite </b> </h5>
+  <h5 style="text-align: center; color: grey; font-size: 16px;">Battle Royale</h5>
+  <h5 style="text-align: center; color: black; font-size: 16px;">Epic Games</h5>
+     <p style="text-align: center; color: yellow; font-size: 18px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+<h6 style="text-align: center; font-size:16 px; color: black;">4.92 star average</h6>
+     </div></b-col>
+<b-col>
+  
+<v-sheet
+          class="d-flex"
+          color="grey lighten-3"
+          height="320"
+        >    </v-sheet>
+
+</b-col>
+    <b-col style="border: thick;">
+      
+      <h5 class="heading-90">Top 5 Players</h5>
+       <v-sheet
+            class="d-flex"
+            color="grey lighten-3"
+            height="200"
+          >
+           <v-list dense >
+          <v-list-tile
+            v-for="item in items"
+            :key="item.title"
+            avatar
+            @click=""
+          >
+          <p style="font-size: 10px;">
+            <v-list-tile-action>
+              <v-icon v-if="item.icon" color="pink">star</v-icon>
+            </v-list-tile-action>
+</p>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="item.title"></v-list-tile-title>
+            </v-list-tile-content>
+
+            <v-list-tile-avatar>
+              <img :src="item.avatar">
+            </v-list-tile-avatar>
+          </v-list-tile>
+        </v-list>
+          
+          </v-sheet>
+        </b-col>
+
   </b-row>
+
 </b-container>
 </b-card>
-<h5 class="heading-90"><div class="online2"/>&nbsp; 0 players online</h5>
+<h5 class="heading-90">
+  <b-row>
+    <b-col>
+  <p style="text-align: left">
+       <v-chip small>
+          #BattleRoyale
+          </v-chip>
+         <v-chip small>
+           #FPS
+          </v-chip>
+            <v-chip small>
+           #Survival
+          </v-chip>
+            
+         </p> </b-col>
+         <b-col><div class="online2"/>&nbsp; 0 players online <v-chip color="red" small>
+          18+
+          </v-chip> </b-col> </b-row></h5>
+
   <p style="color: white; text-align: left; font-size: 16px;">Price: 
  <span style="color: grey;" class="name">
  Free
@@ -87,3 +145,19 @@ Fortnite is an online video game developed by Epic Games and released in 2017. I
     
 }
 </style>
+<script>
+export default {
+  name: 'Sponsors',
+    data () {
+    return {
+      items: [
+          { icon: true, title: 'Jason Oner', avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg' },
+          { title: 'Travis Howard', avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg' },
+          { title: 'Ali Connors', avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg' },
+          { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' },
+           { title: 'Cindy Baker', avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg' }
+        ]
+    }
+    }
+}
+</script>

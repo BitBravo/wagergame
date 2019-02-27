@@ -1,16 +1,18 @@
 <template>
     <div class="col-md-8 main-content">
          <div>
-                  <h5 class="heading2">H2H Mobile</h5>
+                  <h5 class="heading2">Mobile H2H</h5>
                   <div v-if="counter ==1">
     <b-card-group columns>
-        <b-card 
+           <b-card 
                 title="Fortnite">
                <b-card-img 
                 src="/images/fortnite.jpg"
                 alt="Img"
                 top
                 width="80%"/> <h5 class="heading-90"><div class="online2"/>&nbsp; {{ H2HMobileFortnitePlayers }} players online</h5>
+        
+
          <b-button variant="success" href="#/h2h/mobile/fortnite/details" block>Join Room</b-button>
                
         </b-card>
@@ -288,7 +290,8 @@ export default {
     color: #fff;
     padding: 10px 0 10px 0px;
     width: 100%;
-    text-align: center; }
+    text-align: center; 
+    font-size: 14px;}
 
     .online2 {
     height: 15px;
