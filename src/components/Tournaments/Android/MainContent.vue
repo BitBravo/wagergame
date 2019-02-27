@@ -2,7 +2,7 @@
     <div class="col-md-8 main-content">
          <div>
                   <h5 class="heading2">Tournaments Android</h5>
-                  <div v-if="counter ==1">
+                  <div v-if="tournaments_android_counter ==1">
     <b-card-group columns>
                     
            <b-card 
@@ -122,11 +122,11 @@
         </b-card>
 
     </b-card-group>
-      <b-button block variant="primary" v-on:click="counter += 1">Next page</b-button>
+      <b-button block variant="primary" v-on:click="tournaments_android_counter += 1">Next page</b-button>
        <b-button block href="#/tournaments/android/form" variant="success">Submit a game</b-button>
     </div>
 
-    <div v-if="counter ==2">
+    <div v-if="tournaments_android_counter ==2">
     <b-card-group columns>
         <b-card 
                 title="Fortnite">
@@ -245,14 +245,16 @@
         </b-card>
 
     </b-card-group>
-      <b-button block variant="primary" v-on:click="counter += 1">Next page</b-button>
+      <b-button block variant="primary" v-on:click="tournaments_android_counter += 1">Next page</b-button>
+            <b-button block variant="primary" v-on:click="tournaments_android_counter -= 1">Previous page</b-button>
+
        <b-button block href="#/tournaments/android/form" variant="success">Submit a game</b-button>
     </div>
-     <div v-if="counter > 2">
+     <div v-if="tournaments_android_counter > 2">
 
    <b-alert show> No more games to show</b-alert>
 
-      <b-button block variant="primary" v-on:click="counter -= 1">Previous page</b-button>
+      <b-button block variant="primary" v-on:click="tournaments_android_counter -= 1">Previous page</b-button>
        <b-button block href="#/tournaments/android/form" variant="success">Submit a game</b-button>
     </div>
 
@@ -272,7 +274,7 @@ export default {
   name: 'Sponsors',
     data () {
     return {
-      counter: 1,
+      tournaments_android_counter: 1,
 
     }
     }

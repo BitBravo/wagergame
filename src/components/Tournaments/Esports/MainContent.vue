@@ -2,7 +2,7 @@
     <div class="col-md-8 main-content">
          <div>
                   <h5 class="heading2">Esports Tournaments</h5>
-                  <div v-if="counter == 1">
+                  <div v-if="tournaments_esports_counter == 1">
     <b-card-group columns>
         <b-card 
                 title="Fortnite">
@@ -119,11 +119,11 @@
         </b-card>
 
     </b-card-group>
-      <b-button block variant="primary" v-on:click="counter += 1">Next page</b-button>
+      <b-button block variant="primary" v-on:click="tournaments_esports_counter += 1">Next page</b-button>
        <b-button block href="#/tournaments/esports/form" variant="success">Submit a game</b-button>
     </div>
 
-    <div v-if="counter ==2">
+    <div v-if="tournaments_esports_counter ==2">
     <b-card-group columns>
         <b-card 
                 title="Fortnite">
@@ -241,15 +241,15 @@
                 <b-button variant="success" block>More Details</b-button>
         </b-card>
     </b-card-group>
-     <b-button block variant="primary" v-on:click="counter += 1">Next page</b-button>
-      <b-button block variant="primary" v-on:click="counter -= 1">Previous page</b-button>
+     <b-button block variant="primary" v-on:click="tournaments_esports_counter += 1">Next page</b-button>
+<b-button block variant="primary" v-on:click="tournaments_esports_counter -= 1">Previous page</b-button>
        <b-button block href="#/tournaments/esports/form" variant="success">Submit a game</b-button>
     </div>
-   <div v-if="counter > 2 ">
+   <div v-if="tournaments_esports_counter > 2 ">
     
    <b-alert show> No more games to show</b-alert>
 
-      <b-button block variant="primary" v-on:click="counter -= 1">Previous page</b-button>
+      <b-button block variant="primary" v-on:click="tournaments_esports_counter -= 1">Previous page</b-button>
        <b-button block href="#/tournaments/esports/form" variant="success">Submit a game</b-button>
     </div>
 
@@ -269,7 +269,7 @@ export default {
   name: 'Sponsors',
     data () {
     return {
-      counter: 1,
+      tournaments_esports_counter: 1,
 
     }
     }

@@ -245,6 +245,8 @@
 
     </b-card-group>
       <b-button block variant="primary" v-on:click="h2h_esports_counter += 1">Next page</b-button>
+            <b-button block variant="primary" v-on:click="h2h_esports_counter -= 1">Previous page</b-button>
+
        <b-button block href="#/h2h/esports/form" variant="success">Submit a game</b-button>
     </div>
      

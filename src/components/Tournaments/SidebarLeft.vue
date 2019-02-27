@@ -12,7 +12,6 @@
 <li><a class="" href="#/h2h/android" style="text-decoration: none;">Android h2h</a>  <v-divider/></li>
 <li><a class="" href="#/tournaments/ios" style="text-decoration: none;">iOS tournaments</a>  <v-divider/></li>   
 <li><a class="" href="#/h2h/ios" style="text-decoration: none;">iOS h2h</a>  <v-divider/></li> 
-<li><a class="" href="#/browser" style="text-decoration: none;">Browser based games</a>  <v-divider/></li>           
           
          
            
