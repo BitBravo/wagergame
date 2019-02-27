@@ -18,7 +18,7 @@
 
 <p class="detail" style="color: white; text-align: left; font-size: 16px;">Average Rating: <span class="detail" style="color: white; text-align: left; font-size: 20px;"> <b-badge pill variant="primary"> 4.5/5</b-badge></span>
 </p> 
-
+<h5 class="heading-90"><div class="online2"/>&nbsp; 0 players online</h5>
   <p style="color: white; text-align: left; font-size: 16px;">Price: 
  <span style="color: grey;" class="name">
  Free
@@ -77,5 +77,31 @@ Fortnite is an online video game developed by Epic Games and released in 2017. I
   
   
 </template>
+<style>
 
+  .heading-90 {
+    background-color: #222222;
+    color: #fff;
+    padding: 10px 0 10px 0px;
+    width: 100%;
+    text-align: center; }
+
+    .online2 {
+    height: 15px;
+    width: 15px;
+    background-color: #23dd2c;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+
+    .offline2 {
+    height: 15px;
+    width: 15px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+</style>
 
