@@ -19,38 +19,29 @@
       style="max-height: 400px"
       class="scroll-y"
     >
-     <v-sheet
-            class="d-flex"
-            color="grey lighten-3"
-            height="200"
-          >
-           <v-list dense >
+           <v-list>
           <v-list-tile
             v-for="item in items"
             :key="item.title"
             avatar2
           >
-           <v-list-tile-action>
-           <span style="font-size: 3em; color: Tomato;">
-       <i class="fas fa-american-sign-language-interpreting"></i></span>
-            </v-list-tile-action>
-            <span style="font-size: 3em; color: Dodgerblue;">
-            <i class="fas fa-comment"/>
-              </span>
-              <v-chip v-text="item.title" color="green" text-color="white">
-      <v-avatar class="green darken-4">1</v-avatar>
-      Years
-    </v-chip>
+        
 
+            
+
+
+          
      
 
              <v-avatar> <img :src="item.avatar"> </v-avatar>
            
-               </v-chip>
+                       <span style="font-size: 2em; color: Dodgerblue;">
+            <i class="fas fa-comment"/>
+              </span>
           </v-list-tile>
         </v-list>
           
-          </v-sheet>
+         
       <v-layout
         v-scroll:#scroll-target="onScroll"
         column
@@ -96,41 +87,52 @@
  <span style="color: grey;" class="name">
  Free
  </span></p>
-  <p style="color: white; text-align: left; font-size: 16px;">Direct Download Link: 
+  <p style="color: white; text-align: left; font-size: 16px;">App Store Link: 
  <span style="color: grey;" class="name">
-https://www.epicgames.com/fortnite/en-US/download
+https://itunes.apple.com/au/app/fortnite/id1261357853?mt=8
  </span></p>
      <p style="color: white; text-align: left; font-size: 16px;">Compatibility: 
  <span style="color: grey;" class="name">
-iOS and Android </span></p>
+iOS only </span></p>
   <p style="color: white; text-align: left; font-size: 16px;">Languages: 
  <span style="color: grey;" class="name">English, Spanish
 
  </span></p>
    <p style="color: white; text-align: left; font-size: 16px;">Description: 
  <span style="color: grey;" class="name">
-Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite: Save the World, a cooperative shooter-survival game for up to four players to fight off zombie-like creatures and defend objects with fortifications they can build, Fortnite Battle Royale, a free-to-play battle royale game where up to 100 players fight to be the last person standing, and Fortnite Creative, where players are given complete freedom to create worlds and battle arenas. The first two game modes were released in 2017 as early access titles and Creative was released on December 6, 2018. Save the World is available only for Windows, macOS, PlayStation 4, and Xbox One, while Battle Royale has been released for those platforms in addition for Nintendo Switch, iOS and Android devices.
- </span></p>
-  <p style="color: white; text-align: left; font-size: 16px;">Minimum Requirements: 
- <span style="color: grey;" class="name">
-CPU: Core i3 2.4 Ghz
-CPU SPEED: Info
-RAM: 4 GB
-OS: Windows 7/8/10 64-bit
-VIDEO CARD: Intel HD 4000
-PIXEL SHADER: 3.0
-VERTEX SHADER: 3.0
- </span></p>
+Fortnite has come to mobile! Squad up and compete to be the last one standing in Battle Royale, or use your imagination to build your dream Fortnite in Creative.
+
+
+Requires an internet connection and iOS 11.
+
+
+On mobile, Fortnite is the same game you know from PlayStation 4, Xbox One, PC, and Mac. Same map, same gameplay, same weekly updates. Build your fort as you battle to be the last one standing. Jump in and squad up with friends around the world or in the same room!
+
+
+Powered by Unreal Engine 4.
+
+
+CREATIVE - Design games with friends and build your dream Fortnite experience. Your island, your friends, your rules. The most exciting and imaginative islands will be featured on the “The Block” in the Battle Royale map.
+
+
+BUILD & DESTROY - Shape the battlefield by building your own cover. Opponent hiding behind a wall? Take out their cover to get the edge.
+
+
+GEAR UP - Board the battle bus and drop in on your favorite zone. Gather resources, collect gear, and battle your opponents! Last one standing wins.
+
+
+SQUAD UP WITH FRIENDS - Team up with your friends around the world or in the same room!
+
+
+EPIC UPDATES & EVENTS - Weekly updates constantly fuel the fun. New gameplay modes, serious and insane new looks for your avatar, new weapons and items….Fortnite is always expanding.
+
+
+CONSOLE GAMING ON THE GO - Play the full game anytime, anywhere. Complete quests on the go, progress your Battle Pass, and more. </span></p>
   <p style="color: white; text-align: left; font-size: 16px;">Recommended Requirements: 
  <span style="color: grey;" class="name">
-CPU: Core i5 2.8 Ghz
-CPU SPEED: Info
-RAM: 8 GB
-OS: Windows 7/8/10 64-bit
-VIDEO CARD: Nvidia GTX 660 or AMD Radeon HD 7870 equivalent DX11 GPU
-PIXEL SHADER: 5.0
-VERTEX SHADER: 5.0
-DEDICATED VIDEO RAM: 2048 MB
+Works with: iPhone SE, 6S, 7, 8, X, XS, XR; iPad Mini 4, Air 2, 2017, 2018, Pro
+
+Fortnite DOES NOT support: iPhone 5S, 6, 6 Plus; iPad Air, Mini 2, Mini 3, iPod Touch
  </span></p>
 
 

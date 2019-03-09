@@ -27,10 +27,10 @@
                 <b-button variant="success" href="#/h2h/mobile/8ballpool/details" block>Join Room</b-button>
         </b-card>
       
-                <b-card 
-                title="Soccer Stars">
+          <b-card 
+                title="Mobile Legends">
                <b-card-img 
-                src="/images/soccerstars.jpg"
+                src="/images/mobilelegends.jpg"
                 alt="Img"
                 top
                 width="80%"/><h5 class="heading-90"><div class="offline2"/>&nbsp; 0 players online</h5>
@@ -46,14 +46,14 @@
                 width="80%"/><h5 class="heading-90"><div class="offline2"/>&nbsp; 0 players online</h5>
                 <b-button variant="success" block>Join Room</b-button>
         </b-card>
-                <b-card 
-                title="Basketball Stars">
+   <b-card 
+                title="Mobile Legends">
                <b-card-img 
-                src="/images/basketballstars.jpg"
+                src="/images/mobilelegends.jpg"
                 alt="Img"
                 top
-                width="80%"/><h5 class="heading-90"><div class="offline2"/>&nbsp; 0 players online</h5>
-                <b-button variant="success" block>Join Room</b-button>
+                width="80%"/><h5 class="heading-90"><div class="online2"/>&nbsp; {{ H2HMobileMobileLegendsPlayers }} players online</h5>
+                <b-button variant="success" block href="#/h2h/mobile/mobilelegends/details">Join Room</b-button>
         </b-card>
        
            <b-card 
@@ -274,6 +274,9 @@ export default {
   name: 'Sponsors',
     data () {
     return {
+            // My 9 uear old daughter jams Fornitr!
+      H2HMobileMobileLegendsPlayers: 50, 
+           // Mml im===
       H2HMobileFortnitePlayers: 22,     
       H2HMobile8ballpoolPlayers: 100,   
       counter: 1,  

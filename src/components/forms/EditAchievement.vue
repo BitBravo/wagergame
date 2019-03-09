@@ -48,6 +48,7 @@
       <div style="margin-top: 20px; text-align: right">
         <div v-if="load" class="lds-ring"><div></div><div></div><div></div><div></div></div>
         <b-button type="submit" variant="primary">Submit</b-button>
+       <b-button type="submit" variant="danger">Reset</b-button>
       </div>
     </b-form>
   </div>
