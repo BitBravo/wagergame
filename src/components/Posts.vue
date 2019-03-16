@@ -2,7 +2,7 @@
   <div class="posts"></br>
     <div v-if="posts.length > 0" class="table-wrap">
       <table>
-        <tr>
+        <tr>.
         </tr>
         <tr v-for="post in posts">
              <b-card border-variant="Dark"

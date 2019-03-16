@@ -50,12 +50,15 @@ import TournamentsEsportsDota2 from '@/views/TournamentsEsportsDota2.vue'
 import TournamentsEsportsDota21 from '@/views/TournamentsEsportsDota21.vue'
 import TournamentsEsportsForm from '@/views/TournamentsEsportsForm.vue'
 import TournamentsMobileForm from '@/views/TournamentsMobileForm.vue'
-
+import Schedule from '@/views/Schedule.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    { path: '/schedule',
+  name: 'Schdeule',
+component: Schedule },
 { path: '/H2H/mobile/mobilelegends/details',
 name: 'H2HMobileMobileLegendsDetails',
 component: H2HMobileMobileLegendsDetails},
