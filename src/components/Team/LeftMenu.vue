@@ -1,9 +1,9 @@
 <template>
 <div>
   <div class="main_menu">
-  	   <a href="#">Home</a>
-  	   <a href="#">Team History</a>
-  	   <a href="#">ScreenShot</a>
+  	   <a href="/">Home</a>
+  	   <a href="">Team History</a>
+  	   <a href="/screenshots">ScreenShot</a>
   	   <a href="#">Stream</a>
   	   <a href="#">Stats</a>
   	   <a href="#">Schedule</a>

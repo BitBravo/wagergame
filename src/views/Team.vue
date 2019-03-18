@@ -1,12 +1,12 @@
 <template>
-  <div class="team_container">
-    <div v-if="team" class="main_container" style="max-width:1170px;margin:0 auto">
+  <div class="team_container" style="z-index: -1">
+    <div v-if="team" class="main_container" style="max-width:1170px;margin:0 auto;z-index:-2">
       <main-header />
       <InfoNav @invite="showInviteForm" />
       <Sponsers />
       <TopNav />
       <Profile />
-      <sidebar-left style="z-index: -1; display: inline-block; width: 30%" />
+      <sidebar-left style="z-index: 1; display: inline-block; width: 30%" />
       <Container style="float: right" />
       <div v-if="loading" class="load-overlay">
           <div class="cube-wrapper">
