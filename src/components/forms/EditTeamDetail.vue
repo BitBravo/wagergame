@@ -40,6 +40,10 @@
         </b-form-textarea>
       </b-form-group>
       <!-- Styled -->
+      <!-- <b-button id="show-modal" @click="showModal = true" variant="success">Select avatar from our list</b-button>
+  -->
+       <b-button>Select avatar</b-button>
+
       <div class="mb-3">
         <b-form-file required v-model="cover" placeholder="Choose cover photo"></b-form-file>
         <div v-if="cover" class="mt-1">Selected file: {{cover && cover.name}} <i @click="cover = null" class="pointer fa fa-close"></i></div>
@@ -53,7 +57,18 @@
       <div v-if="load" class="lds-ring"><div></div><div></div><div></div><div></div></div>
       <b-button type="submit" variant="primary">Update</b-button>
     </div>
+
+
+
+
+    
   </b-form>
+
+
+
+
+
+  
 </template>
 
 <script>
@@ -75,8 +90,19 @@ export default {
         location: '',
         founder: '',
         coverImg: '',
-        profileImg: ''
-      }
+        profileImg: '',
+        showModal: false
+      },
+      dataImages:
+      [{
+  id: '1',
+  src: 'https://unsplash.it/200?random',
+  alt: 'Alt Image 1'
+}, {
+  id: '2',
+  src: 'https://unsplash.it/200?random',
+  alt: 'Alt Image 2'
+}],
     }
   },
   computed: {

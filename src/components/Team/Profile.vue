@@ -16,9 +16,12 @@
 				<li><a class="link-blue" href="#">Become a member</a></li>
 			</ul>	   
 		</div>
-  	   <div class="pro_img">
+		  	   
+   <div class="pro_img">
 	   		<center><b-img rounded="circle" :src="team.profileImg" width="200" height="200" blank-color="#777" alt="img" class="m-1" /></center>
 	   </div> 
+	   </div> 
+  	
   </div>
 </template>
 
@@ -31,6 +34,13 @@ export default {
 		...mapGetters({
 			team: 'team/activeTeam'
 		})
-	}
-};
+
+	},
+	methods: {
+		setLoad() {
+		
+		}
+},
+}
+
 </script>

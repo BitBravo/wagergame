@@ -1,320 +1,169 @@
 <template>
+  <div class="col-md-2 p-0" id="sidebar" style="top: -50px;">
+    <div class="sidebar-left pl-0 d-flex">
+      <ul class="nav flex-column flex-nowrap">
+     
+        <li class="nav-item hvr-fade"> 
+            
+          <a
+            class="nav-link collapsed"
+            href="/"
+          >Home </a>
+     
+   
+        </li>
 
-    <div class="col-md-2 p-0">
-      <div class="sidebar-left-page3">
-        <ul>
-                
-          
-                  <li>
-            <li>
-                    <a class="" href="http://localhost:8080" style="text-decoration: none;">Home</a> 
-            <hr></li>
-            <li><a class="" href="#" style="text-decoration: none;">Team History</a><hr></li>
-          <div class="active" id="line1"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Screenshot</a> 
-            <a class="" href="#" id="b" style="text-decoration: none;">Coming Soon</a>
-            <hr></li></div>
-             <div class="active" id="line2"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Stream</a> 
-            <a class="" href="#" id="b" style="text-decoration: none;">Coming Soon</a>
-            <hr></li></div>
-            <div class="active" id="line3"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Stats</a> 
-            <a class="" href="#" id="b" style="text-decoration: none;">Coming Soon</a>
-            <hr></li></div>
-              <div class="active" id="line4"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Schedule</a> 
-            <a class="" href="#" id="b" style="text-decoration: none;">Coming Soon</a>
-            <hr></li></div>
-              <div class="active" id="line5"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Managers</a> 
-            <a class="" href="#" id="b" style="text-decoration: nonee;">Coming Soon</a>
-            <hr></li></div>
-              <div class="active" id="line6"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Interviews</a> 
-            <a class="" href="#" id="b" style="text-decoration: none;">Coming Soon</a>
-            <hr></li></div>
-            <div class="active" id="line7"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Stream</a> 
-            <a class="" href="#" id="b" style="text-decoration: none;">Coming Soon</a>
-            <hr></li></div>
-            <div class="active" id="line8"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Gallery</a> 
-            <a class="" href="#" id="b" style="text-decoration: none;">Coming Soon</a>
-            <hr></li></div>
-            <div class="active" id="line9"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Online/LAN</a> 
-            <a class="" href="#" id="b" style="text-decoration: none;">Coming Soon</a>
-            <hr></li></div>
-            <div class="active" id="line10"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Matches</a> 
-            <a class="" href="#" id="b" style="text-decoration: none;">Coming Soon</a>
-            <hr></li></div>
-<div class="active" id="line11"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Tournament</a> 
-            <a class="" href="#" id="b" style="text-decoration: none;">Coming Soon</a>
-            <hr></li></div>
-            <div class="active" id="line12"> 
-             <li><a class="" href="#" id="a" style="text-decoration: none;">Connect</a> 
-            <a class="" href="#" id="b" style="text-decoration: none;">Coming Soon</a>
-            <hr></li></div>
 
+        <li v-if="loggedIn" class="nav-item hvr-fade">
+          <a
+            class="nav-link collapsed "
+            href="#"
+          >Team History</a>
            
-          
-         
-           
-         
 
-        </ul>
+                 <v-divider/>
+        </li>
+
+        <li class="nav-item  hvr-fade">
+          <a
+            class="nav-link collapsed"
+            href="/screenshots"
+          >Screenshots</a>
+
+          <v-divider/>
+        </li>
+        <li class="nav-item  hvr-fade" v-if="team">
+          <a
+            class="nav-link collapsed"
+            href="/streams"
+          >Streams</a>
+
+   
+           <v-divider/>
+        </li>
+        <li class="nav-item  hvr-fade">
+          <a
+            class="nav-link collapsed"
+            href="/schedule"
+          >Stats</a>
+
+           <v-divider/>
+           </li>
+        <li class="nav-item  hvr-fade">
+          <a
+            class="nav-link collapsed"
+            href="/schedule"
+          >Schedule</a>
+
+           <v-divider/>
+                </li>
+                   <li class="nav-item  hvr-fade">
+          <a
+            class="nav-link collapsed"
+            href="/schedule"
+          >Managers</a>
+
+           <v-divider/>
+                </li>
+                   <li class="nav-item  hvr-fade">
+          <a
+            class="nav-link collapsed"
+            href="/schedule"
+          >Inteviews</a>
+
+           <v-divider/>
+                </li>
+                   <li class="nav-item  hvr-fade">
+          <a
+            class="nav-link collapsed"
+            href="/schedule"
+          >Streams</a>
+
+           <v-divider/>
+                </li>
+                   <li class="nav-item  hvr-fade">
+          <a
+            class="nav-link collapsed"
+            href="/schedule"
+          >Online/LAN</a>
+
+           <v-divider/>
+                </li>
+                                 <li class="nav-item  hvr-fade">
+          <a
+            class="nav-link collapsed"
+            href="/schedule"
+          >Matches</a>
+
+           <v-divider/>
+                </li>
+                                 <li class="nav-item  hvr-fade">
+          <a
+            class="nav-link collapsed"
+            href="/schedule"
+          >Tournament</a>
+
+           <v-divider/>
+                </li>
+                                 <li class="nav-item  hvr-fade">
+          <a
+            class="nav-link collapsed"
+            href="/schedule"
+          >Head to Head</a>
+
+           <v-divider/>
+                </li>
+                                 <li class="nav-item  hvr-fade">
+          <a
+            class="nav-link collapsed"
+            href="/schedule"
+          >Connect</a>
+
+           <v-divider/>
+                </li>
+      </ul>
+      </div>
   </div>
-</div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
-    name: 'SidebarLeft'
-}
+  name: "SidebarLeft",
+  computed: {
+    ...mapGetters({
+      team: "team/activeTeam"
+    }),
+    loggedIn() {
+      if (this.$store.getters.loggedIn) {
+        this.$store.dispatch("getProfile");
+        return true;
+      }
+
+      return false;
+    }
+  }
+};
 </script>
 
 <style>
-div#line1 a#a {
-  display: inline;
-}
 
-div#line1:hover a#a {
-  display: none;
-  
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
 }
-
-div#line1 a#b {
-  display: none;
-}
-
-div#line1:hover a#b {
-  display: inline;
-    color: yellow
-}
-div#line2 a#a {
-  display: inline;
-}
-
-div#line2:hover a#a {
-  display: none;
-  
-}
-
-div#line2 a#b {
-  display: none;
-}
-
-div#line2:hover a#b {
-  display: inline;
-    color: yellow
-}
-div#line3 a#a {
-  display: inline;
-}
-
-div#line3:hover a#a {
-  display: none;
-  
-}
-
-div#line3 a#b {
-  display: none;
-}
-
-div#line3:hover a#b {
-  display: inline;
-    color: yellow
-}
-div#line4 a#a {
-  display: inline;
-}
-
-div#line4:hover a#a {
-  display: none;
-  
-}
-
-div#line4 a#b {
-  display: none;
-}
-
-div#line4:hover a#b {
-  display: inline;
-    color: yellow
-}
-div#line3 a#a {
-  display: inline;
-}
-
-div#line3:hover a#a {
-  display: none;
-  
-}
-
-div#line3 a#b {
-  display: none;
-}
-
-div#line3:hover a#b {
-  display: inline;
-    color: yellow
-}
-div#line4 a#a {
-  display: inline;
-}
-
-div#line4:hover a#a {
-  display: none;
-  
-}
-
-div#line4 a#b {
-  display: none;
-}
-
-div#line4:hover a#b {
-  display: inline;
-    color: yellow
-}
-div#line5 a#a {
-  display: inline;
-}
-
-div#line5:hover a#a {
-  display: none;
-  
-}
-
-div#line5 a#b {
-  display: none;
-}
-
-div#line5:hover a#b {
-  display: inline;
-    color: yellow
-}
-
-div#line6 a#a {
-  display: inline;
-}
-
-div#line6:hover a#a {
-  display: none;
-  
-}
-
-div#line6 a#b {
-  display: none;
-}
-
-div#line6:hover a#b {
-  display: inline;
-    color: yellow
-}
-div#line7 a#a {
-  display: inline;
-}
-
-div#line7:hover a#a {
-  display: none;
-  
-}
-
-div#line7 a#b {
-  display: none;
-}
-
-div#line7:hover a#b {
-  display: inline;
-    color: yellow
-}
-div#line8 a#a {
-  display: inline;
-}
-
-div#line8:hover a#a {
-  display: none;
-  
-}
-
-div#line8 a#b {
-  display: none;
-}
-
-div#line8:hover a#b {
-  display: inline;
-    color: yellow
-}
-
-div#line9 a#a {
-  display: inline;
-}
-
-div#line9:hover a#a {
-  display: none;
-  
-}
-
-div#line9 a#b {
-  display: none;
-}
-
-div#line9:hover a#b {
-  display: inline;
-    color: yellow
-}
-div#line10 a#a {
-  display: inline;
-}
-
-div#line10:hover a#a {
-  display: none;
-  
-}
-
-div#line10 a#b {
-  display: none;
-}
-
-div#line10:hover a#b {
-  display: inline;
-    color: yellow
-}
-div#line11 a#a {
-  display: inline;
-}
-
-div#line11:hover a#a {
-  display: none;
-  
-}
-
-div#line11 a#b {
-  display: none;
-}
-
-div#line11:hover a#b {
-  display: inline;
-    color: yellow
-}
-div#line12 a#a {
-  display: inline;
-}
-
-div#line12:hover a#a {
-  display: none;
-  
-}
-
-div#line12 a#b {
-  display: none;
-}
-
-div#line12:hover a#b {
-  display: inline;
-    color: yellow
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #2098D1;
+  color: white;
 }
 </style>
+

@@ -37,11 +37,12 @@
         </b-form-textarea>
       </b-form-group>
       <!-- Styled -->
-      
-      <b-form-file v-model="file" :state="Boolean(file)" placeholder="Choose avatar"></b-form-file>
+        <b-button>Select avatar from our list</b-button>
+      <b-form-file v-model="file" :state="Boolean(file)" placeholder="Upload avatar"></b-form-file>
       <div v-if="file" class="mt-3">Selected file: {{file && file.name}} <i class="fa fa-close" @click="file =null"></i></div>
+
       
-      <b-form-file v-model="fileCover" :state="Boolean(file)" placeholder="Choose cover photo"></b-form-file>
+      <b-form-file v-model="fileCover" :state="Boolean(file)" placeholder="Upload cover photo"></b-form-file>
       <div v-if="fileCover" class="mt-3">Selected file: {{fileCover && fileCover.name}} <i class="fa fa-close" @click="fileCover =null"></i></div>
       
       <div style="margin-top: 20px; text-align: right">

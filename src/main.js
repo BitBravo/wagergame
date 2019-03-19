@@ -7,7 +7,11 @@ import VueSweetalert2 from 'vue-sweetalert2';
 import VeeValidate from 'vee-validate';
 import { ValidationProvider } from 'vee-validate';
 import VueLazyLoad from 'vue-lazyload';
-
+import VueSelectImage from 'vue-select-image'
+require('vue-select-image/dist/vue-select-image.css')
+import ModalFullScreenVue from 'modal-fullscreen-vue';
+Vue.use(ModalFullScreenVue);
+Vue.use(VueSelectImage)
 Vue.use(VueLazyLoad)
 Vue.component('ValidationProvider', ValidationProvider);
 Vue.use(VeeValidate);

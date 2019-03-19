@@ -12,6 +12,8 @@
         </b-form-input>
       </b-form-group>
       <!-- Styled -->
+
+      
       <b-form-file ref="fileinput" :required="team === false ? true : false" v-model="file" :state="Boolean(file)" placeholder="Choose avatar"></b-form-file>
       <div v-if="file" class="mt-3">Selected file: {{file && file.name}}</div>
 

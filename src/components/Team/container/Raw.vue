@@ -56,12 +56,12 @@
 				</div>
 				<div class="content">
 					<flickity class="gallery" v-if="data.achievements.length > 0">
-						<div
+						<div  style="top:-45px;"
 							@click="$root.$emit('openEditDialog', {component: 'TeamAchievement', mode: 'Edit', data: i})"  
 							class="carousel-cell gallery-cell" v-for="(item, i) in data.achievements" :key="i">
-							<div class="img">
+							<div class="img" style="top:40px;">
 								<center>
-							 		<img :src="item.imgPath">
+							 		<img style="top:40px;" :src="item.imgPath">
 								</center>
 							</div>
 							<div class="txt">
