@@ -1,5 +1,7 @@
 # wagergames
 
+![screen](src/assets/screen.png)
+
 ## Project setup
 ```
 yarn install
